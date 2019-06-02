@@ -13,6 +13,8 @@ import './include/components';
 
 Vue.config.productionTip = false;
 
+Vue.prototype.$publicPath = process.env.BASE_URL;
+
 new Vue({
   router,
   store,

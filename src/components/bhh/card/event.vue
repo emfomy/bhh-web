@@ -1,11 +1,11 @@
 <template>
-  <Card class="EventCard border-warning">
+  <Card class="border-warning">
     <slot slot="zh-title" name="zh-title" />
     <slot slot="en-title" name="en-title" />
     <slot slot="story" name="story" />
     <slot slot="body" />
     <template slot="footer">
-      <b-img class="EventIcon" center src="/assets/images/event_icon.png" />
+      <b-img class="EventIcon" center src="@/assets/images/event_icon.png" />
     </template>
   </Card>
 </template>
@@ -22,9 +22,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.EventCard {
-  background-image: url('/assets/images/event_background.png');
-  background-size: contain;
+.Card {
+  background-image: url('../../../assets/images/event_background.png');
 }
 
 .EventIcon {

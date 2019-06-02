@@ -351,9 +351,9 @@
           <RollT>4+</RollT>
             <RollD>臉孔不過是光影的把戲罷了。</RollD>
           <RollT>1-3</RollT>
-            <RollD>受到１顆骰的物理傷害。若你位於有事件符號的房間中，額外多加１顆骰。</RollD>
+            <RollD>受到１顆骰的物理傷害。若你位於有事件符號的房間中，額外多擲１顆骰。</RollD>
           <RollT>0</RollT>
-            <RollD>受到１顆骰的物理傷害。若你位於有事件符號的房間中，額外多加２顆骰。</RollD>
+            <RollD>受到１顆骰的物理傷害。若你位於有事件符號的房間中，額外多擲２顆骰。</RollD>
         </RollL>
       </EventCard>
 

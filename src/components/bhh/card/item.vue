@@ -1,11 +1,11 @@
 <template>
-  <Card class="ItemCard border-danger">
+  <Card class="border-danger">
     <template slot="zh-title">{{ zhName }}</template>
     <template slot="en-title">{{ name }}</template>
     <slot slot="story" name="story" />
     <slot slot="body" />
     <template slot="footer">
-      <b-img class="ItemIcon" center src="/assets/images/item_icon.png" />
+      <b-img class="ItemIcon" center src="@/assets/images/item_icon.png" />
     </template>
   </Card>
 </template>
@@ -31,9 +31,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.ItemCard {
-  background-image: url('/assets/images/item_background.png');
-  background-size: contain;
+.Card {
+  background-image: url('../../../assets/images/item_background.png');
 }
 
 .ItemIcon {

@@ -1,12 +1,12 @@
 <template>
-  <Card class="OmenCard border-success">
+  <Card class="border-success" :type="type">
     <template slot="zh-title">{{ zhName }}</template>
     <template slot="en-title">{{ name }}</template>
     <slot slot="story" name="story" />
     <slot slot="body" />
     <template slot="footer">
-      <b-img class="OmenIcon" center src="/assets/images/omen_icon.png" />
-      <p class="mb-0 mt-2">請立即進行作祟檢定。</p>
+      <b-img class="OmenIcon" center src="@/assets/images/omen_icon.png" />
+      <p class="mt-3">請立即進行作祟檢定。</p>
     </template>
   </Card>
 </template>
@@ -21,6 +21,7 @@ export default {
   },
   props: [
     'name',
+    'type',
   ],
   computed: {
     zhName() {
@@ -32,9 +33,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.OmenCard {
-  background-image: url('/assets/images/omen_background.png');
-  background-size: contain;
+.Card {
+  background-image: url('../../../assets/images/omen_background.png');
 }
 
 .OmenIcon {
