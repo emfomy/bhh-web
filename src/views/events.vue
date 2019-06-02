@@ -45,7 +45,7 @@
           <RollT>4+</RollT>
             <RollD>你撐過去了！獲得１級神志。</RollD>
           <RollT>2-3</RollT>
-            <RollD>失去１級神志</RollD>
+            <RollD>失去１級神志。</RollD>
           <RollT>0-1</RollT>
             <RollD>你神志不清，突然攻擊１名跟你同房或相鄰房間（有門相通）的探險者或怪物（力量最低者）。</RollD>
         </RollL>
@@ -164,7 +164,7 @@
         <template slot="story">
           地板沉緩地發出嘎軋的聲響，塵土向上飛揚，骯髒的地板上浮現了一步步的腳印。而就在它們快碰到你時，卻消失了⋯
         </template>
-        <Roll0>請立即擲１顆骰（如果你人在<Room name="Crypt" />，多擲１顆）</Roll0>
+        <Roll0>請立即擲１顆骰（如果你人在<Room name="Crypt" />，請多擲１顆）：</Roll0>
         <RollL>
           <RollT>4</RollT>
             <RollD>你和離你最近的探險者皆獲得１級力量。</RollD>
@@ -265,7 +265,7 @@
         <template slot="en-title">Image in the Mirror</template>
         <template slot="story">
           這房間中，有一面古老的鏡子，你疑惑地看著鏡中自己的倒影，發現他不但自行動了起來，還帶著一臉恐懼。你瞭解到這是另一個時空中的自己，而他需要幫助。於是你在鏡子上寫下：
-          <div class="text-center">這會有用的</div>
+          <div class="text-center my-1">這會有用的</div>
           並透過鏡子遞給他一件物品⋯
         </template>
         <p>若你手上沒有道具卡，則由下一位持有道具卡的玩家觸發此效果。</p>
@@ -277,7 +277,7 @@
         <template slot="en-title"><span style="display: inline-block; transform: scaleX(-1);">Image in the Mirror</span></template>
         <template slot="story">
           這房間中，有一面古老的鏡子，你驚恐地看著鏡中自己的倒影，發現他不但自行動了起來，還帶著一臉疑惑。你瞭解到這是另一個時空中的自己，而他會幫助你。你的倒影在鏡子上寫下：
-          <div class="text-center" style="transform: scaleX(-1);">這會有用的</div>
+          <div class="text-center my-1" style="transform: scaleX(-1);">這會有用的</div>
           並透過鏡子遞給你一件物品⋯
         </template>
         <p>抽取１張道具卡。</p>
@@ -629,11 +629,11 @@
         <Roll0>請立即進行知識檢定：</Roll0>
         <RollL>
           <RollT>5+</RollT>
-            <RollD>你再一次的清醒過來。獲得１級知識。</RollD>
+            <RollD>再次清醒過來。獲得１級知識。</RollD>
           <RollT>0-4</RollT>
             <RollD>
               <Roll0>另外擲３顆骰，幽魂引導你至：</Roll0>
-              <RollL>
+              <RollL style="margin-left: -2rem">
                 <RollT>6</RollT>
                   <RollD><Room name="Entrance Hall" />。</RollD>
                 <RollT>4-5</RollT>
@@ -643,7 +643,7 @@
                 <RollT>0-1</RollT>
                   <RollD>抽取一張地下室的房間板塊。</RollD>
               </RollL>
-              <p>若已無未探索，則直接前往<Room name="Entrance Hall" />。</p>
+              <p>若已無未探索房間板塊，則直接前往<Room name="Entrance Hall" />。</p>
             </RollD>
         </RollL>
       </EventCard>

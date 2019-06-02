@@ -1,8 +1,13 @@
 <template>
-  <Card class="border-success">
+  <Card class="OmenCard border-success">
     <template slot="zh-title">{{ zhName }}</template>
     <template slot="en-title">{{ name }}</template>
-    <slot v-for="(_, slot) in $slots" :slot="slot" :name="slot" />
+    <slot slot="story" name="story" />
+    <slot slot="body" />
+    <template slot="footer">
+      <b-img class="OmenIcon" center src="/assets/images/omen_icon.png" />
+      <p class="mb-0 mt-2">請立即進行作祟檢定。</p>
+    </template>
   </Card>
 </template>
 
@@ -25,3 +30,15 @@ export default {
   },
 };
 </script>
+
+<style scoped lang="scss">
+.OmenCard {
+  background-image: url('/assets/images/omen_background.png');
+  background-size: contain;
+}
+
+.OmenIcon {
+  height: 2rem;
+}
+</style>
+

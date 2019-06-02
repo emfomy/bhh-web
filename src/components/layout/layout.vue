@@ -1,5 +1,5 @@
 <template>
-  <div class="Layout min-vh-100 d-flex flex-column bg-milk-light" >
+  <div class="Layout d-flex flex-column min-vh-100 bg-milk-light" >
     <Nav/>
     <div class="flex-grow-1"><slot /></div>
     <Footer/>
