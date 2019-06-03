@@ -31,8 +31,8 @@ export default {
     },
   },
   methods: {
-    download() {
-      return this.$refs.body.toImage(`Item - ${this.name}`);
+    downloadParam() {
+      return this.$refs.body.downloadParam(`Item - ${this.name}`);
     },
   },
 };

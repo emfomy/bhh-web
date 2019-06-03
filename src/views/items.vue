@@ -130,7 +130,7 @@
 import ItemCard from '@/components/bhh/card/item.vue';
 
 export default {
-  name: 'Events',
+  name: 'Items',
   components: {
     ItemCard,
   },

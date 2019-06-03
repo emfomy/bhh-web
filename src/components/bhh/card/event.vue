@@ -22,8 +22,8 @@ export default {
     'name',
   ],
   methods: {
-    download() {
-      return this.$refs.body.toImage(`Event - ${this.name}`);
+    downloadParam() {
+      return this.$refs.body.downloadParam(`Event - ${this.name}`);
     },
   },
 };

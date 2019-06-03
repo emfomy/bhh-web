@@ -19,8 +19,6 @@
 <script>
 import _ from 'lodash';
 
-import domtoimage from 'dom-to-image';
-
 export default {
   name: 'Card',
   props: [
@@ -31,44 +29,21 @@ export default {
       if (this.usage) {
         console.assert(_(this.$share.usages).has(this.usage));
         return _.defaultTo(this.$share.usages[this.usage], '????????');
-      } else {
-        return null;
       }
+      return null;
     },
   },
   methods: {
-    toImage(name) {
-      const filename = `BHH - ${name}.png`;
-      const scale = 3;
-      const width = 215;
-      const height = 400;
-
-      console.warn(`Generating: ${filename}`);
-      this.$bvToast.toast(filename, {
-        title: 'Generating',
-        variant: 'warning',
-        toaster: 'b-toaster-top-left',
-        autoHideDelay: 1000,
-      });
-
-      return domtoimage.toPng(this.$el, {
-        width: width * scale,
-        height: height * scale,
-        style: {
-          transform: `scale(${scale})`,
-          transformOrigin: 'top left',
-          width: `${width}px`,
-          height: `${height}px`,
-        },
-      })
-        .then(dataUrl => {
-          return {
-            dataUrl,
-            filename,
-          };
-        });
+    downloadParam(name) {
+      return {
+        el: this.$el,
+        name,
+        scale: 3,
+        width: 215,
+        height: 400,
+      };
     },
-  }
+  },
 };
 </script>
 

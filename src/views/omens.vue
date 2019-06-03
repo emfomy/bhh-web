@@ -140,7 +140,7 @@
 import OmenCard from '@/components/bhh/card/omen.vue';
 
 export default {
-  name: 'Events',
+  name: 'Omens',
   components: {
     OmenCard,
   },

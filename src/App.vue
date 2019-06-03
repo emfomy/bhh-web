@@ -8,8 +8,9 @@
 import Layout from '@/components/layout/layout.vue';
 
 import _ from 'lodash';
-import async from 'async';
-import { saveAs } from 'file-saver';
+import aSync from 'async';
+import domtoimage from 'dom-to-image';
+import saveAs from 'file-saver';
 
 export default {
   name: 'App',
@@ -18,35 +19,44 @@ export default {
   },
   methods: {
     download() {
-      const taskQueue = [];
+      const taskQueue = aSync.queue((task, callback) => {
+        task().then(callback);
+      }, 4);
+
       _(this.$refs.body.$children).forEach((child) => {
-        if (typeof(child.download) === 'function') {
-          taskQueue.push((callback) => {
-            return child.download().then((res) => {
-              callback(null, res);
-            });
-          });
+        if (typeof (child.downloadParam) === 'function') {
+          const param = child.downloadParam();
+          taskQueue.push(() => this.downloadOne(param));
         }
       });
+    },
+    downloadOne(param) {
+      const {
+        el, name, scale, width, height,
+      } = param;
+      const fileName = `BHH - ${name}.png`;
 
-      async.parallel(taskQueue)
-        .then((res) => {
-          const downloadQueue = [];
-          _(res).forEach((param) => {
-            const { dataUrl, filename } = param;
-            downloadQueue.push((callback) => {
-              console.warn(`Downloading: ${filename}`);
-              this.$bvToast.toast(filename, {
-                title: 'Downloading',
-                variant: 'success',
-                toaster: 'b-toaster-top-left',
-                autoHideDelay: 1000,
-              });
-              saveAs(dataUrl, filename);
-              callback(null, null);
-            });
-          });
-          async.series(downloadQueue);
+      this.$bvToast.toast(fileName, {
+        title: 'Downloading',
+        variant: 'success',
+        toaster: 'b-toaster-top-left',
+        autoHideDelay: 1000,
+      });
+
+      console.warn(`Generating: ${fileName}`);
+      return domtoimage.toPng(el, {
+        width: width * scale,
+        height: height * scale,
+        style: {
+          transform: `scale(${scale})`,
+          transformOrigin: 'top left',
+          width: `${width}px`,
+          height: `${height}px`,
+        },
+      })
+        .then((dataUrl) => {
+          console.warn(`Downloading: ${fileName}`);
+          saveAs(dataUrl, fileName);
         });
     },
   },
