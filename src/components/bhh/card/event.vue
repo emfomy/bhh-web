@@ -1,7 +1,7 @@
 <template>
   <Card ref="body" class="border-warning">
     <slot slot="zh-title" name="zh-title" />
-    <slot slot="en-title" name="en-title" />
+    <slot slot="en-title" name="en-title">{{ name }}</slot>
     <slot slot="story" name="story" />
     <slot slot="body" />
     <template slot="footer">
