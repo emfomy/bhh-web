@@ -1,5 +1,5 @@
 <template>
-  <Card class="border-success" :type="type">
+  <Card ref="body" class="border-success" :usage="usage">
     <template slot="zh-title">{{ zhName }}</template>
     <template slot="en-title">{{ name }}</template>
     <slot slot="story" name="story" />
@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import _ from 'lodash';
+
 import Card from './card.vue';
 
 export default {
@@ -21,12 +23,17 @@ export default {
   },
   props: [
     'name',
-    'type',
+    'usage',
   ],
   computed: {
     zhName() {
       console.assert(_(this.$share.omens).has(this.name));
       return _.defaultTo(this.$share.omens[this.name], '????????');
+    },
+  },
+  methods: {
+    download() {
+      return this.$refs.body.toImage(`Omen - ${this.name}`);
     },
   },
 };
@@ -41,4 +48,3 @@ export default {
   height: 2rem;
 }
 </style>
-

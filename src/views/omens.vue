@@ -6,7 +6,7 @@
       <p></p>
     </header>
 
-    <b-card class="mb-3" body-class="d-flex flex-wrap justify-content-around">
+    <b-card class="mb-3" body-class="d-flex flex-wrap justify-content-between">
 
       <OmenCard class="m-2" name="Bite">
         <template slot="story">
@@ -41,7 +41,7 @@
         </RollL>
       </OmenCard>
 
-      <OmenCard class="m-2" name="Dog" type="companion">
+      <OmenCard class="m-2" name="Dog" usage="companion">
         <template slot="story">
           看似友善的癩皮狗⋯至少你希望牠是⋯
         </template>
@@ -53,7 +53,7 @@
         <p><Omen brief name="Dog" />不可被棄置、交易、或偷竊。</p>
       </OmenCard>
 
-      <OmenCard class="m-2" name="Girl" type="companion">
+      <OmenCard class="m-2" name="Girl" usage="companion">
         <template slot="story">
           被困住的孤獨女孩，你拯救了她！
         </template>
@@ -70,7 +70,7 @@
         <p>若你失去<Omen brief name="Holy Symbol" />，立即失去２級神志。</p>
       </OmenCard>
 
-      <OmenCard class="m-2" name="Madman" type="companion">
+      <OmenCard class="m-2" name="Madman" usage="companion">
         <template slot="story">
           口吐白沫、胡言亂語的瘋漢。
         </template>
@@ -115,7 +115,7 @@
         當你受到精神傷害時，可將所有的傷害轉為物理傷害，但不可只轉換部分傷害。
       </OmenCard>
 
-      <OmenCard class="m-2" name="Spear" type="weapon">
+      <OmenCard class="m-2" name="Spear" usage="weapon">
         <template slot="story">
           一個充滿能量而震動的武器。
         </template>

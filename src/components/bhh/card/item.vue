@@ -1,5 +1,5 @@
 <template>
-  <Card class="border-danger">
+  <Card ref="body" class="border-danger" :usage="usage">
     <template slot="zh-title">{{ zhName }}</template>
     <template slot="en-title">{{ name }}</template>
     <slot slot="story" name="story" />
@@ -11,6 +11,8 @@
 </template>
 
 <script>
+import _ from 'lodash';
+
 import Card from './card.vue';
 
 export default {
@@ -20,11 +22,17 @@ export default {
   },
   props: [
     'name',
+    'usage',
   ],
   computed: {
     zhName() {
       console.assert(_(this.$share.items).has(this.name));
       return _.defaultTo(this.$share.items[this.name], '????????');
+    },
+  },
+  methods: {
+    download() {
+      return this.$refs.body.toImage(`Item - ${this.name}`);
     },
   },
 };
@@ -39,4 +47,3 @@ export default {
   height: 2rem;
 }
 </style>
-

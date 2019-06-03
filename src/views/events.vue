@@ -1,16 +1,15 @@
 <template>
-  <b-container class="py-3">
+  <b-container class="width-A4 py-3">
 
     <header class="text-center">
       <h1>事件列表</h1>
       <p></p>
     </header>
 
-    <b-card class="mb-3" body-class="d-flex flex-wrap justify-content-around">
+    <b-card class="mb-3" body-class="d-flex flex-wrap justify-content-between">
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="A Moment of Hope">
         <template slot="zh-title">希望時刻</template>
-        <template slot="en-title">A Moment of Hope</template>
         <template slot="story">
           房間湧現出不可思議的正面能量，似乎有什麼正努力對抗著這屋子裡的邪惡勢力。
         </template>
@@ -19,9 +18,8 @@
         <p>戰鬥不算檢定。</p>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Angry Being">
         <template slot="zh-title">惱人的生物</template>
-        <template slot="en-title">Angry Being</template>
         <template slot="story">牠從牆上的黏液中冒出。而且⋯就在你身邊⋯</template>
         <Roll0>請立即進行速度檢定：</Roll0>
         <RollL>
@@ -34,9 +32,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Bloody Vision">
         <template slot="zh-title">血腥幻象</template>
-        <template slot="en-title">Bloody Vision</template>
         <template slot="story">
           牆壁因血液而潮濕，鮮血從天花板不停滴下，流過牆壁、傢俱，直到你的鞋子⋯轉眼之間，又全都消失⋯
         </template>
@@ -51,9 +48,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Burning Man">
         <template slot="zh-title">燃燒之人</template>
-        <template slot="en-title">Burning Man</template>
         <template slot="story">
           全身著火的男子從房間跑過，濃膩的水泡在皮膚上冒出並破裂，最後只剩下炙熱的頭骨，頭顱撞擊至地面上後，持續滾動⋯
         </template>
@@ -68,9 +64,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Closet Door">
         <template slot="zh-title">壁櫥</template>
-        <template slot="en-title">Closet Door</template>
         <template slot="story">
           壁櫥的門半掩著，裡面肯定有什麼東西躲藏著⋯
         </template>
@@ -86,9 +81,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Creepy Crawlies">
         <template slot="zh-title">恐怖爬蟲</template>
-        <template slot="en-title">Creepy Crawlies</template>
         <template slot="story">
           成千上萬的爬蟲，落在你的皮膚上，鑽進衣服、頭髮之中⋯
         </template>
@@ -103,9 +97,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Creepy Puppet">
         <template slot="zh-title">陰森傀儡</template>
-        <template slot="en-title">Creepy Puppet</template>
         <template slot="story">
           散段的雜物中，你發現一個令你毛骨悚然的傀儡。在你們四目相接時，他突然拿起小小的矛向你跳去⋯
         </template>
@@ -113,9 +106,8 @@
         <p>若你因此受傷，除你以外擁有<Item name="Spear" />的玩家，獲得２級力量。</p>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Debris">
         <template slot="zh-title">瓦礫</template>
-        <template slot="en-title">Debris</template>
         <template slot="story">
           泥灰從天花板及牆上不斷掉落⋯
         </template>
@@ -133,9 +125,8 @@
         <p>若檢定三次失敗，你自動掙脫並丟棄此卡，從下回合開始正常行動。</p>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Disquieting Sounds">
         <template slot="zh-title">令人不安的聲響</template>
-        <template slot="en-title">Disquieting Sounds</template>
         <template slot="story">
           嬰兒的哭泣聲殷殷響起，控訴著被遺棄的命運。緊接著是一聲尖叫，以及刺耳的玻璃碎裂聲⋯接著，一切恢復寂靜⋯
         </template>
@@ -148,9 +139,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Drip… Drip… Drip…">
         <template slot="zh-title">滴⋯滴⋯滴⋯</template>
-        <template slot="en-title">Drip… Drip… Drip…</template>
         <template slot="story">
           一段有節奏的聲音刺激你的腦袋⋯
         </template>
@@ -158,9 +148,8 @@
         <p>此後，在此房間進行的任何檢定，皆須少擲１顆骰子（至少１顆）。</p>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Footsteps">
         <template slot="zh-title">腳印</template>
-        <template slot="en-title">Footsteps</template>
         <template slot="story">
           地板沉緩地發出嘎軋的聲響，塵土向上飛揚，骯髒的地板上浮現了一步步的腳印。而就在它們快碰到你時，卻消失了⋯
         </template>
@@ -179,9 +168,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Funeral">
         <template slot="zh-title">葬儀</template>
-        <template slot="en-title">Funeral</template>
         <template slot="story">
           你看見一口打開的棺材，而你正躺在裡面⋯
         </template>
@@ -196,9 +184,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Grave Dirt">
         <template slot="zh-title">墳土飛揚</template>
-        <template slot="en-title">Grave Dirt</template>
         <template slot="story">
           這房間覆蓋著一層厚厚的墳土，塵土飄至皮膚，你吸入肺中而咳嗽⋯
         </template>
@@ -212,9 +199,8 @@
         <p>若你回合結束時，停留在<Room name="Balcony" />、<Room name="Gardens" />、<Room name="Graveyard" />、<Room name="Gymnasium" />、<Room name="Larder" />、<Room name="Patio" />、<Room name="Tower" />，或是因道具卡而讓任一屬性升級時，丟棄此卡並回復正常。</p>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Groundskeeper">
         <template slot="zh-title">園丁</template>
-        <template slot="en-title">Groundskeeper</template>
         <template slot="story">
           你轉身看見一名身穿園丁服的男人，他舉起鏟子，朝你衝來。而就在鏟子快擊中你時，卻消失了，只留下滿地的泥濘⋯
         </template>
@@ -227,9 +213,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Hanged Men">
         <template slot="zh-title">上吊之人</template>
-        <template slot="en-title">Hanged Men</template>
         <template slot="story">
           一陣寒風吹過房間，三名男人被破爛麻繩吊掛在天花板上。他們靜靜地擺動者，用冰冷、死亡的眼神注視著你，接著逐漸化為塵土，令你感到窒息⋯
         </template>
@@ -243,9 +228,8 @@
         <p>若所有屬性皆通過檢定，獲得１級任意屬性。</p>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Hideous Shriek">
         <template slot="zh-title">駭人驚叫</template>
-        <template slot="en-title">Hideous Shriek</template>
         <template slot="story">
           一開始聽起來像耳語，但最後卻變成了撕裂靈魂的驚叫⋯
         </template>
@@ -260,9 +244,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Image in the Mirror">
         <template slot="zh-title">鏡中影像</template>
-        <template slot="en-title">Image in the Mirror</template>
         <template slot="story">
           這房間中，有一面古老的鏡子，你疑惑地看著鏡中自己的倒影，發現他不但自行動了起來，還帶著一臉恐懼。你瞭解到這是另一個時空中的自己，而他需要幫助。於是你在鏡子上寫下：
           <div class="text-center my-1">這會有用的</div>
@@ -272,7 +255,7 @@
         <p>選擇１張你所擁有的道具卡，洗入道具牌庫中。獲得１級知識。</p>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="rorriM eht ni egamI">
         <template slot="zh-title"><span style="display: inline-block; transform: scaleX(-1);">鏡中影像</span></template>
         <template slot="en-title"><span style="display: inline-block; transform: scaleX(-1);">Image in the Mirror</span></template>
         <template slot="story">
@@ -283,9 +266,8 @@
         <p>抽取１張道具卡。</p>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="It is Meant to Be">
         <template slot="zh-title">命中註定</template>
-        <template slot="en-title">It is Meant to Be</template>
         <template slot="story">
           你跌坐在地上，未來的影像閃過你的腦海⋯
         </template>
@@ -298,9 +280,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Jonah’s Turn">
         <template slot="zh-title">約拿的回合</template>
-        <template slot="en-title">Jonah's Turn</template>
         <template slot="story">
           兩個小男孩在玩陀螺。<br />
           男孩：『約拿，你也想玩呀？』<br />
@@ -311,9 +292,8 @@
         <p>若此事發生，你獲得１級神志，否則你失去１級神志。</p>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Lights Out">
         <template slot="zh-title">燈熄了</template>
-        <template slot="en-title">Lights Out</template>
         <template slot="story">
           你的手電筒忽然熄滅。別擔心，總會有人帶著電池的⋯
         </template>
@@ -322,9 +302,8 @@
         <p>若你持有<Item name="Candle" />，或在<Room name="Furnace Room" />結束回合，亦可棄掉卡片。</p>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Locked Safe">
         <template slot="zh-title">上鎖的保險箱</template>
-        <template slot="en-title">Locked Safe</template>
         <template slot="story">
           在肖像畫後方的牆上，你發現了一個隱藏的保險箱。當然，它肯定有某種陷阱⋯
         </template>
@@ -340,9 +319,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Mists From the Walls">
         <template slot="zh-title">壁上霧靄</template>
-        <template slot="en-title">Mists From the Walls</template>
         <template slot="story">
           霧氣從牆上湧現，煙霧之中浮現了滿滿的人臉⋯有些看來甚至不像人類⋯⋯
         </template>
@@ -357,9 +335,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Mystic Slide">
         <template slot="zh-title">神秘滑道</template>
-        <template slot="en-title">Mystic Slide</template>
         <template slot="story">
           你腳下的地板，忽然滑落並鬆開⋯
         </template>
@@ -370,14 +347,13 @@
           <RollT>5+</RollT>
             <RollD>你成功控制住滑道。移至低一樓層的任意已探索的房間中。</RollD>
           <RollT>0-4</RollT>
-            <RollD>你失控了！抽取一張地下室的房間板塊（若已無未探索的地下室房間，則任選一間），視為探險者所跌落處，並受到１顆骰的物理傷害。若這是你不是的回合，則無須為新房間抽取事件／道具／預兆卡。</RollD>
+            <RollD>你失控了！抽取一張地下室的房間板塊<!-- （若已無未探索的地下室房間，則任選一間） -->，跌落至該處，並受到１顆骰的物理傷害。若這是你不是的回合，則無須為新房間抽取事件／道具／預兆卡。</RollD>
         </RollL>
         <p>此後，任何探險者皆可透過檢定嘗試使用滑道，而不須花費行動步數。</p>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Night View">
         <template slot="zh-title">暗夜景象</template>
-        <template slot="en-title">Night View</template>
         <template slot="story">
           一對幽魂情侶掠過你的面前，身穿結婚禮服無聲地漫步著⋯
         </template>
@@ -390,9 +366,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Phone Call">
         <template slot="zh-title">鈴鈴鈴⋯</template>
-        <template slot="en-title">Phone Call</template>
         <template slot="story">
           房內的電話忽然想起，你不自覺地接起這通電話⋯
         </template>
@@ -409,9 +384,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Possession">
         <template slot="zh-title">著魔</template>
-        <template slot="en-title">Possession</template>
         <template slot="story">
           牆上分裂出數道黑影，你一時受到震驚而無法動作。黑影卻仍包圍著，一股惡寒從你心裡冷出來⋯
         </template>
@@ -424,9 +398,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Revolving Wall">
         <template slot="zh-title">旋轉牆</template>
-        <template slot="en-title">Revolving Wall</template>
         <template slot="story">
           牆面旋轉至另一個地方⋯
         </template>
@@ -440,9 +413,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Rotten">
         <template slot="zh-title">腐敗</template>
-        <template slot="en-title">Rotten</template>
         <template slot="story">
           這坊間的味道簡直糟透了！聞起來像死亡，有如屠宰場的鮮血⋯
         </template>
@@ -459,9 +431,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Secret Passage">
         <template slot="zh-title">秘密通道</template>
-        <template slot="en-title">Secret Passage</template>
         <template slot="story">
           牆壁的一部分滑了開來，一道發霉的通道正在等著你⋯
         </template>
@@ -481,9 +452,8 @@
         <p>此後，任何探險者皆可使用通道，並花費１點行動步數。</p>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Secret Stairs">
         <template slot="zh-title">秘密階梯</template>
-        <template slot="en-title">Secret Stairs</template>
         <template slot="story">
           一道毛骨悚然的聲響環繞著你，你發現了一個秘密階梯⋯
         </template>
@@ -492,9 +462,8 @@
         <p>此後，任何探險者皆可使用通道，並花費１點行動步數。</p>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Shrieking Wind">
         <template slot="zh-title">尖聲狂風</template>
-        <template slot="en-title">Shrieking Wind</template>
         <template slot="story">
           風勢持續地增強，緩慢地漸強成刺耳的咆叫聲⋯
         </template>
@@ -511,9 +480,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Silence">
         <template slot="zh-title">寂靜</template>
-        <template slot="en-title">Silence</template>
         <template slot="story">
           在地底下，任何事物都變得沈默，彷彿連呼吸聲都消失了⋯
         </template>
@@ -528,9 +496,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Skeletons">
         <template slot="zh-title">骨骸</template>
-        <template slot="en-title">Skeletons</template>
         <template slot="story">
           即使成了骨骸，母親與孩子仍然緊緊擁抱著⋯
         </template>
@@ -544,9 +511,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Smoke">
         <template slot="zh-title">煙霧</template>
-        <template slot="en-title">Smoke</template>
         <template slot="story">
           煙霧在你四周翻騰，你一邊咳嗽，一邊擦著眼淚⋯
         </template>
@@ -556,9 +522,8 @@
         <p>戰鬥不算檢定。</p>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Something Hidden">
         <template slot="zh-title">隱藏著什麼⋯</template>
-        <template slot="en-title">Something Hidden</template>
         <template slot="story">
           這房間似乎有些古怪，但到底會是什麼呢？這持續困擾著你⋯
         </template>
@@ -571,9 +536,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Something Slimy">
         <template slot="zh-title">黏滑之物</template>
-        <template slot="en-title">Something Slimy</template>
         <template slot="story">
           在你腳踝上的是什麼東西？是一隻蟲？是誰的觸角？還是一隻死人的手⋯
         </template>
@@ -588,9 +552,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Spider">
         <template slot="zh-title">蜘蛛</template>
-        <template slot="en-title">Spider</template>
         <template slot="story">
           拳頭般大小的蜘蛛，突然落在你的肩膀上，爬入你的頭髮⋯
         </template>
@@ -605,9 +568,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="The Beckoning">
         <template slot="zh-title">呼喚</template>
-        <template slot="en-title">The Beckoning</template>
         <template slot="story">
           離開！我必須離開！飛向自由吧！
         </template>
@@ -620,9 +582,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="The Lost One">
         <template slot="zh-title">迷失之魂</template>
-        <template slot="en-title">The Lost One</template>
         <template slot="story">
           一名身穿美國內戰晚禮服的女子，正揮手招喚著你，不久後，你便陷入了催眠中⋯
         </template>
@@ -648,9 +609,8 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="The Voice">
         <template slot="zh-title">人聲</template>
-        <template slot="en-title">The Voice</template>
         <template slot="story">
           『我在地底下，被埋在地底下⋯』微弱的聲音只說出這樣一句，便不再發聲⋯
         </template>
@@ -663,18 +623,16 @@
         </RollL>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="The Walls">
         <template slot="zh-title">牆</template>
-        <template slot="en-title">The Walls</template>
         <template slot="story">
           在這間溫暖的房間中，活生生的牆壁有如心跳得正動，你的心臟也跟著這房屋的節奏拍打。忽然間，你被吸入牆壁之中⋯
         </template>
         <p>請立即抽取一張新的房間板塊，並移到此處。</p>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="Webs">
         <template slot="zh-title">蜘蛛網</template>
-        <template slot="en-title">Webs</template>
         <template slot="story">
           一如往常地，你伸手把蜘蛛網撥開，但這次沒能成功，你被黏住了⋯
         </template>
@@ -691,18 +649,16 @@
         <p>若檢定三次失敗，你自動掙脫並丟棄此卡，從下回合開始正常行動。</p>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="What the…?">
         <template slot="zh-title">咦？</template>
-        <template slot="en-title">What the…?</template>
         <template slot="story">
           當你回樓轉向經過的房間時，卻什麼也沒看到，只留下一層迷霧⋯
         </template>
         <p>請將你身處的房間板塊移至同一樓層中，任一尚未探索的門後，房間上的所有標記皆一起移動。</p>
       </EventCard>
 
-      <EventCard class="m-2">
+      <EventCard class="m-2" name="WHOOPS!">
         <template slot="zh-title">哎呀！</template>
-        <template slot="en-title">WHOOPS!</template>
         <template slot="story">
           你發現腳下似乎有什麼東西，正要躲開時，卻被牠狠狠擊倒，只聽見一陣咯咯笑聲離你遠去⋯
         </template>

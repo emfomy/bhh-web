@@ -1,5 +1,5 @@
 <template>
-  <Card class="border-warning">
+  <Card ref="body" class="border-warning">
     <slot slot="zh-title" name="zh-title" />
     <slot slot="en-title" name="en-title" />
     <slot slot="story" name="story" />
@@ -17,6 +17,14 @@ export default {
   name: 'EventCard',
   components: {
     Card,
+  },
+  props: [
+    'name',
+  ],
+  methods: {
+    download() {
+      return this.$refs.body.toImage(`Event - ${this.name}`);
+    },
   },
 };
 </script>

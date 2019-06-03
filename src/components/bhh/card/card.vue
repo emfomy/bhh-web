@@ -1,7 +1,6 @@
 <template>
   <div class="Card position-relative border rounded bg-milk-light">
     <div class="CardBody position-absolute w-100 h-100">
-      <img v-if="imgSrc" />
       <h4 class="text-center"><slot name="zh-title">???</slot></h4>
       <h5 class="text-center" style="text-transform: uppercase;"><slot name="en-title">???</slot></h5>
       <p class="font-weight-bold font-italic mb-0"><slot name="story">???</slot></p>
@@ -9,7 +8,7 @@
       <slot name="body" />
     </div>
     <div class="CardType position-absolute">
-      <h6 v-if="type" class="text-center mb-1">{{ zhType }}</h6>
+      <h6 v-if="usage" class="text-center mb-1">{{ zhType }}</h6>
     </div>
     <div class="CardFooter position-absolute w-100">
       <slot name="footer" />
@@ -18,18 +17,58 @@
 </template>
 
 <script>
+import _ from 'lodash';
+
+import domtoimage from 'dom-to-image';
+
 export default {
   name: 'Card',
   props: [
-    'img-src',
-    'type',
+    'usage',
   ],
   computed: {
     zhType() {
-      console.assert(_(this.$share.itemTypes).has(this.type));
-      return _.defaultTo(this.$share.itemTypes[this.type], '????????');
+      if (this.usage) {
+        console.assert(_(this.$share.usages).has(this.usage));
+        return _.defaultTo(this.$share.usages[this.usage], '????????');
+      } else {
+        return null;
+      }
     },
   },
+  methods: {
+    toImage(name) {
+      const filename = `BHH - ${name}.png`;
+      const scale = 3;
+      const width = 215;
+      const height = 400;
+
+      console.warn(`Generating: ${filename}`);
+      this.$bvToast.toast(filename, {
+        title: 'Generating',
+        variant: 'warning',
+        toaster: 'b-toaster-top-left',
+        autoHideDelay: 1000,
+      });
+
+      return domtoimage.toPng(this.$el, {
+        width: width * scale,
+        height: height * scale,
+        style: {
+          transform: `scale(${scale})`,
+          transformOrigin: 'top left',
+          width: `${width}px`,
+          height: `${height}px`,
+        },
+      })
+        .then(dataUrl => {
+          return {
+            dataUrl,
+            filename,
+          };
+        });
+    },
+  }
 };
 </script>
 

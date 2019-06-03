@@ -12,7 +12,7 @@
         <b-tab title="Secrets Survival" active>
           <b-card-text><slot name="hero" /></b-card-text>
         </b-tab>
-        <b-tab title="Traitor's Tome">
+        <b-tab title="Traitor’s Tome">
           <b-card-text><slot name="traitor" /></b-card-text>
         </b-tab>
       </b-tabs>

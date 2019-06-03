@@ -9,13 +9,14 @@ module.exports = {
       },
     },
   },
-  chainWebpack: config => {
+  chainWebpack: (config) => {
     config.module
       .rule('vue')
       .use('vue-loader')
       .loader('vue-loader')
-      .tap(options => {
-        options['transformAssetUrls'] = {
+      .tap((options) => {
+        // eslint-disable-next-line no-param-reassign
+        options.transformAssetUrls = {
           img: 'src',
           image: 'xlink:href',
           'b-img': 'src',
@@ -25,10 +26,10 @@ module.exports = {
           'b-card-img-lazy': ['src', 'blank-src'],
           'b-carousel-slide': 'img-src',
           'b-embed': 'src',
-        }
+        };
 
-        return options
-      })
+        return options;
+      });
   },
   publicPath: process.env.NODE_ENV === 'production'
     ? '~emfomy/bhh/'
