@@ -15,7 +15,7 @@
         <p>當你抽到此卡時，某種東西突然咬上了你！</p>
         <p>你的右方的玩家代替神秘生物，擲 4 顆骰子對你的攻擊，你以力量進行防禦。</p>
         <p>攻擊後，神秘生物又再一次隱沒在黑暗當中。</p>
-        <p><Omen brief name="Bite" />不可被棄置、交易、或偷竊。</p>
+        <p><Omen brief name="Bite" />不可被棄置、交易、或搶奪。</p>
       </OmenCard>
 
       <OmenCard class="m-2" name="Book">
@@ -30,7 +30,7 @@
         <template slot="story">
           在球體中浮現了模糊的影像。
         </template>
-        <Roll0>在作祟發生後，每回合中，你可進行知識檢定嘗試窺視<Omen brief name="Crystal Ball" />一次：</Roll0>
+        <Roll0>在作祟發生後，每回合一次，你可進行知識檢定嘗試窺視<Omen brief name="Crystal Ball" />：</Roll0>
         <RollL>
           <RollT>4+</RollT>
             <RollD>你看見真相。從道具牌堆中選擇一張卡，將牌堆洗勻後將選擇的卡放在牌堆頂端。</RollD>
@@ -48,9 +48,9 @@
         <p>立即獲得１級力量和１級神志。</p>
         <p>若你失去<Omen brief name="Dog" />，立即失去１級力量和１級神志。</p>
         <!-- <p>使用一個小怪物標示代表這隻<Omen brief name="Dog" />，將牠放在你的房間裡。（不要和其他怪物搞混。）</p> -->
-        <p>每回合中，你可差遣<Omen brief name="Dog" />來回於六格內的房間一次（可使用門和樓梯），途中牠可以攜帶一件物品去丟下，同時也可以撿拾並帶回一件掉落的物品。</p>
+        <p>每回合一次，你可差遣<Omen brief name="Dog" />來回於六格內的房間（可使用門和樓梯），途中牠可以攜帶一件物品去丟下，同時也可以撿拾並帶回一件掉落的物品。</p>
         <p><Omen brief name="Dog" />不會被對手阻擋。牠不能通過單向的通道、或任何需要擲骰的房間。牠也不能攜帶會減緩移動速度的道具。</p>
-        <p><Omen brief name="Dog" />不可被棄置、交易、或偷竊。</p>
+        <p><Omen brief name="Dog" />不可被棄置、交易、或搶奪。</p>
       </OmenCard>
 
       <OmenCard class="m-2" name="Girl" usage="companion">
@@ -59,7 +59,7 @@
         </template>
         <p>立即獲得１級神志和１級知識。</p>
         <p>若你失去<Omen brief name="Girl" />，立即失去１級神志和１級知識。</p>
-        <p><Omen brief name="Girl" />不可被棄置、交易、或偷竊。</p>
+        <p><Omen brief name="Girl" />不可被棄置、交易、或搶奪。</p>
       </OmenCard>
 
       <OmenCard class="m-2" name="Holy Symbol">
@@ -76,14 +76,14 @@
         </template>
         <p>立即獲得２級力量，並失去１級神志。</p>
         <p>若你失去<Omen brief name="Girl" />，立即失去２級力量，並獲得１級神志。</p>
-        <p><Omen brief name="Girl" />不可被棄置、交易、或偷竊。</p>
+        <p><Omen brief name="Girl" />不可被棄置、交易、或搶奪。</p>
       </OmenCard>
 
       <OmenCard class="m-2" name="Mask">
         <template slot="story">
           一個可以用來隱藏你意圖的陰沈面具。
         </template>
-        <Roll0>此後每回合中，你可進行神志檢定嘗試使用<Omen brief name="Mask" />一次：</Roll0>
+        <Roll0>此後每回合一次，你可進行神志檢定嘗試使用<Omen brief name="Mask" />：</Roll0>
         <RollL>
           <RollT>4+</RollT>
             <RollD>你可自由戴上或脫下<Omen brief name="Mask" />。</RollD>
@@ -119,8 +119,9 @@
         <template slot="story">
           一個充滿能量而震動的武器。
         </template>
-        <p>當你持有長矛進行力量攻擊時，額外多擲２顆骰。</p>
-        <p>你不可以同時使用多樣武器。</p>
+        <p>當你使用<Omen brief name="Spear" />進行力量攻擊時，額外多擲２顆骰。</p>
+        <p><Omen brief name="Spear" />不得用於防禦。</p>
+        <p>你不可同時使用多樣武器攻擊。</p>
       </OmenCard>
 
       <OmenCard class="m-2" name="Spirit Board">
@@ -128,7 +129,7 @@
           刻印著招喚死亡的文字與數字。
         </template>
         <p>此後每回合移動之前，你可以使用<Omen bried name="Spirit Board" />窺視房間牌堆頂端的板塊。</p>
-        <p>在作祟發生之後，每當你使用<Omen bried name="Spirit Board" />時，叛徒可遣任意數量的怪物向你移動一格。若你身為叛徒，則忽略此效果。若沒有叛徒，則所有怪物皆須向你前進一格。</p>
+        <p>在作祟發生之後，每當你使用<Omen bried name="Spirit Board" />時，叛徒可遣任意數量的怪物向你移動１格。若你身為叛徒，則忽略此效果。若沒有叛徒，則所有怪物皆須向你前進１格。</p>
       </OmenCard>
 
     </b-card>
