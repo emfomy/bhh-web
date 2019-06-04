@@ -25,8 +25,8 @@ import bhhImg from '@/assets/images/bhh.png';
 import bwwImg from '@/assets/images/bww.png';
 
 const seriesImg = {
-  'BHH': bhhImg,
-  'BWW': bwwImg,
+  BHH: bhhImg,
+  BWW: bwwImg,
 };
 
 export default {
@@ -45,11 +45,10 @@ export default {
     },
     seriesProps() {
       console.assert(_(seriesImg).has(this.series));
-      if ( _(seriesImg).has(this.series) ) {
-        return { src: seriesImg[this.series], };
-      } else {
-        return { blank: true, blankColor: 'red', };
+      if (_(seriesImg).has(this.series)) {
+        return { src: seriesImg[this.series] };
       }
+      return { blank: true, blankColor: 'red' };
     },
   },
   methods: {
@@ -88,25 +87,25 @@ export default {
 }
 
 .CardBody {
-  padding: 2rem;
+  padding: 2.5rem 2rem 2rem;
   top: 0;
 
   background: rgba(255, 255, 255, 0.2);
 }
 
 .CardFooter {
-   padding: 2rem;
-   bottom: 0;
+  padding: 2rem;
+  bottom: 0;
 }
 
 .CardType {
-  top: 2rem;
-  left: 2rem;
+  top: 1.75rem;
+  left: 1.75rem;
 }
 
 .CardSeries {
-  top: 2rem;
-  right: 2rem;
+  top: 1.75rem;
+  right: 1.75rem;
   height: 1rem;
   width:  1rem;
 }

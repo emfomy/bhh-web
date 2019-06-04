@@ -2,17 +2,17 @@
 import _ from 'lodash';
 
 const tokenSquare = {
-  'Blessing': '祝福',
+  Blessing: '祝福',
   'Burial Mound': '墳塚',
-  'Closet': '壁櫥',
-  'Drip': '滴落',
-  'Plant': '植物',
-  'Safe': '保險箱',
+  Closet: '壁櫥',
+  Drip: '滴落',
+  Plant: '植物',
+  Safe: '保險箱',
   'Secret Passage': '秘密通道',
   'Secret Stairs': '秘密階梯',
-  'Skeletons': '骨骸',
-  'Slide': '滑道',
-  'Smoke': '煙霧',
+  Skeletons: '骨骸',
+  Slide: '滑道',
+  Smoke: '煙霧',
   'Wall Switch': '牆機關',
 };
 
