@@ -9,10 +9,10 @@
 import _ from 'lodash';
 
 export default {
-  props: {
-    name: null,
-    brief: null,
-  },
+  props: [
+    'name',
+    'brief',
+  ],
   computed: {
     zhName() {
       console.assert(_(this.$share.items).has(this.name));

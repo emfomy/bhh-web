@@ -1,6 +1,6 @@
 <template>
   <Layout @download="download">
-    <router-view ref="body" />
+    <router-view ref="view" />
   </Layout>
 </template>
 
@@ -23,7 +23,7 @@ export default {
         task().then(callback);
       }, 4);
 
-      _(this.$refs.body.$children).forEach((child) => {
+      _(this.$refs.view.downloadChild()).forEach((child) => {
         if (typeof (child.downloadParam) === 'function') {
           const param = child.downloadParam();
           taskQueue.push(() => this.downloadOne(param));

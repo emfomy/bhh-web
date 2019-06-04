@@ -25,3 +25,21 @@ $milk-dark: darken($milk, 10%);
 .card {
   box-shadow: $box-shadow-sm;
 }
+
+// Font
+
+.font-zh-title {
+  font-family: 'Baoli TC';
+}
+
+.font-en-title {
+  font-family: 'Chalkduster';
+}
+
+.font-story {
+  font-family: 'Xingkai TC';
+}
+
+.font-script {
+  font-family: 'LingWai TC' !important;
+}

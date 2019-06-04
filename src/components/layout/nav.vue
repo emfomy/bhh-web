@@ -7,11 +7,11 @@
       <b-collapse id="nav-collapse" is-nav>
 
         <b-navbar-nav>
-          <b-nav-item exact-active-class="active font-weight-bold" :to="{ name: 'home' }">主頁</b-nav-item>
-          <b-nav-item exact-active-class="active font-weight-bold" :to="{ name: 'events' }">事件</b-nav-item>
-          <b-nav-item exact-active-class="active font-weight-bold" :to="{ name: 'items' }">道具</b-nav-item>
-          <b-nav-item exact-active-class="active font-weight-bold" :to="{ name: 'omens' }">預兆</b-nav-item>
-          <b-nav-item active-class="active font-weight-bold" :to="{ name: 'haunts' }">作祟</b-nav-item>
+          <b-nav-item exact-active-class="active font-weight-bold" to="/">主頁</b-nav-item>
+          <b-nav-item active-class="active font-weight-bold" to="/events">事件</b-nav-item>
+          <b-nav-item active-class="active font-weight-bold" to="/items">道具</b-nav-item>
+          <b-nav-item active-class="active font-weight-bold" to="/omens">預兆</b-nav-item>
+          <b-nav-item active-class="active font-weight-bold" to="/haunts">作祟</b-nav-item>
         </b-navbar-nav>
 
         <b-navbar-nav class="ml-auto">

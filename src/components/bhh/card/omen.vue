@@ -1,5 +1,5 @@
 <template>
-  <Card ref="body" class="border-success" :usage="usage">
+  <Card ref="body" class="border-success" :series="series" :usage="usage">
     <template slot="zh-title">{{ zhName }}</template>
     <template slot="en-title">{{ name }}</template>
     <slot slot="story" name="story" />
@@ -24,6 +24,7 @@ export default {
   props: [
     'name',
     'usage',
+    'series',
   ],
   computed: {
     zhName() {
@@ -33,7 +34,7 @@ export default {
   },
   methods: {
     downloadParam() {
-      return this.$refs.body.downloadParam(`Omen - ${this.name}`);
+      return this.$refs.body.downloadParam(`Omen - ${this.series} - ${this.name}`);
     },
   },
 };

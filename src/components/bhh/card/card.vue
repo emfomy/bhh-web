@@ -1,15 +1,17 @@
 <template>
   <div class="Card position-relative border rounded bg-milk-light">
     <div class="CardBody position-absolute w-100 h-100">
-      <h4 class="text-center"><slot name="zh-title">???</slot></h4>
-      <h5 class="text-center" style="text-transform: uppercase;"><slot name="en-title">???</slot></h5>
-      <p class="font-weight-bold font-italic mb-0"><slot name="story">???</slot></p>
+      <h4 class="text-center font-zh-title"><slot name="zh-title">???</slot></h4>
+      <h6 class="text-center font-en-title" style="text-transform: uppercase;"><slot name="en-title">???</slot></h6>
+      <p class="text-center font-story font-weight-bold mb-0"><slot name="story">???</slot></p>
       <hr class="my-2" />
       <slot name="body" />
     </div>
-    <div class="CardType position-absolute">
-      <h6 v-if="usage" class="text-center mb-1">{{ zhType }}</h6>
-    </div>
+
+    <h6 v-if="usage" class="CardType font-zh-title position-absolute">{{ zhType }}</h6>
+
+    <b-img class="CardSeries position-absolute" v-bind="seriesProps" />
+
     <div class="CardFooter position-absolute w-100">
       <slot name="footer" />
     </div>
@@ -19,9 +21,18 @@
 <script>
 import _ from 'lodash';
 
+import bhhImg from '@/assets/images/bhh.png';
+import bwwImg from '@/assets/images/bww.png';
+
+const seriesImg = {
+  'BHH': bhhImg,
+  'BWW': bwwImg,
+};
+
 export default {
   name: 'Card',
   props: [
+    'series',
     'usage',
   ],
   computed: {
@@ -31,6 +42,14 @@ export default {
         return _.defaultTo(this.$share.usages[this.usage], '????????');
       }
       return null;
+    },
+    seriesProps() {
+      console.assert(_(seriesImg).has(this.series));
+      if ( _(seriesImg).has(this.series) ) {
+        return { src: seriesImg[this.series], };
+      } else {
+        return { blank: true, blankColor: 'red', };
+      }
     },
   },
   methods: {
@@ -68,11 +87,6 @@ export default {
   }
 }
 
-.CardType {
-  padding: 2rem;
-  top: 0;
-}
-
 .CardBody {
   padding: 2rem;
   top: 0;
@@ -81,7 +95,19 @@ export default {
 }
 
 .CardFooter {
-  padding: 2rem;
-  bottom: 0;
+   padding: 2rem;
+   bottom: 0;
+}
+
+.CardType {
+  top: 2rem;
+  left: 2rem;
+}
+
+.CardSeries {
+  top: 2rem;
+  right: 2rem;
+  height: 1rem;
+  width:  1rem;
 }
 </style>
