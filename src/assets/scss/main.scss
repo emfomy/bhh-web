@@ -5,41 +5,9 @@ html {
 $enable-shadows: true;
 
 @import "~bootstrap/scss/bootstrap";
-
-$milk: #dcd9cd;
-$milk-light: lighten($milk, 10%);
-$milk-dark: darken($milk, 10%);
-
-.bg-milk {
-  background-color: $milk !important;
-}
-
-.bg-milk-light {
-  background-color: $milk-light !important;
-}
-
-.bg-milk-dark {
-  background-color: $milk-dark !important;
-}
+@import "./_color";
+@import "./_font";
 
 .card {
   box-shadow: $box-shadow-sm;
-}
-
-// Font
-
-.font-zh-title {
-  font-family: 'Baoli TC';
-}
-
-.font-en-title {
-  font-family: 'Chalkduster';
-}
-
-.font-story {
-  font-family: 'Xingkai TC';
-}
-
-.font-script {
-  font-family: 'LingWai TC' !important;
 }

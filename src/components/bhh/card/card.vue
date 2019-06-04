@@ -1,9 +1,9 @@
 <template>
-  <div class="Card position-relative border rounded bg-milk-light">
+  <div class="Card position-relative rounded bg-milk-light">
     <div class="CardBody position-absolute w-100 h-100">
-      <h4 class="text-center font-zh-title"><slot name="zh-title">???</slot></h4>
-      <h6 class="text-center font-en-title" style="text-transform: uppercase;"><slot name="en-title">???</slot></h6>
-      <p class="text-center font-story font-weight-bold mb-0"><slot name="story">???</slot></p>
+      <h3 class="text-center font-zh-title mb-0"><slot name="zh-title">???</slot></h3>
+      <h6 class="text-center font-en-title text-milk-dark" style="text-transform: uppercase;"><slot name="en-title">???</slot></h6>
+      <p class="text-center font-zh-story font-weight-bold mb-0"><slot name="story">???</slot></p>
       <hr class="my-2" />
       <slot name="body" />
     </div>

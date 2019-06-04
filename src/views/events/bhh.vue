@@ -4,7 +4,7 @@
     <EventCard class="m-2" series="BHH" name="A Moment of Hope">
       <template slot="zh-title">希望時刻</template>
       <template slot="story">
-        房間湧現出不可思議的正面能量，似乎有什麼正努力對抗著這屋子裡的邪惡勢力。
+        房間湧現出不可思議的正面能量，似乎有什麼正努力對抗著這宅邸裡的邪惡勢力。
       </template>
       <p>放置一枚<Token name="Blessing" />在此房。</p>
       <p>此後，在此房內進行的任何檢定，皆多擲１顆骰（至多８顆）。</p>
@@ -95,7 +95,7 @@
       <template slot="story">
         散段的雜物中，你發現一個令你毛骨悚然的傀儡。在你們四目相接時，他突然拿起小小的矛向你跳去⋯
       </template>
-      <p>你的右方的玩家代替傀儡，擲 4 顆骰子對你的攻擊，你以力量進行防禦。</p>
+      <p>你的右方的玩家代替傀儡，對你的進行力量４的攻擊。</p>
       <p>若你因此受傷，除你以外擁有<Omen name="Spear" />的玩家，獲得２級力量。</p>
     </EventCard>
 
@@ -113,7 +113,7 @@
         <RollT>0</RollT>
           <RollD>你被瓦礫活埋！受到２顆骰的物理傷害。</RollD>
       </RollL>
-      <p>若被活埋，保留此卡，並無法再進行任何行動或使用道具，直到掙脫為止。</p>
+      <p>若被活埋，保留此卡，並無法再進行任何行動或使用物品，直到掙脫為止。</p>
       <p>此後每回合一次，你皆可進行力量檢定達 4+ 嘗試掙脫。其他探險者也能用此方法幫你掙脫。</p>
       <p>若檢定三次失敗，你自動掙脫並丟棄此卡，從下回合開始正常行動。</p>
     </EventCard>
@@ -146,7 +146,7 @@
       <template slot="story">
         地板沉緩地發出嘎軋的聲響，塵土向上飛揚，骯髒的地板上浮現了一步步的腳印。而就在它們快碰到你時，卻消失了⋯
       </template>
-      <Roll0>請立即擲１顆骰（如果你人在<Room name="Crypt" />，額外多擲１顆）：</Roll0>
+      <Roll0>請立即擲１顆骰（如果你位於<Room name="Crypt" />，額外多擲１顆）：</Roll0>
       <RollL>
         <RollT>4</RollT>
           <RollD>你和離你最近的探險者皆獲得１級力量。</RollD>
@@ -166,7 +166,7 @@
       <template slot="story">
         你看見一口打開的棺材，而你正躺在裡面⋯
       </template>
-      <Roll0>請立即進行神智檢定：</Roll0>
+      <Roll0>請立即進行神志檢定：</Roll0>
       <RollL>
         <RollT>4+</RollT>
           <RollD>一眨眼，全都消失了。獲得１級神志。</RollD>
@@ -202,7 +202,7 @@
         <RollT>4+</RollT>
           <RollD>你在泥濘中發現了某樣東西。抽取１張道具卡。</RollD>
         <RollT>0-3</RollT>
-          <RollD>園丁再次出現，並用鏟子用力揮向你的臉！你的右方的玩家代替園丁，擲 4 顆骰子對你的攻擊，你以力量進行防禦。</RollD>
+          <RollD>園丁再次出現，並用鏟子用力揮向你的臉！你的右方的玩家代替園丁，對你的進行力量４的攻擊。</RollD>
       </RollL>
     </EventCard>
 
@@ -241,7 +241,7 @@
       <template slot="zh-title">鏡中影像</template>
       <template slot="story">
         這房間中，有一面古老的鏡子，你疑惑地看著鏡中自己的倒影，發現他不但自行動了起來，還帶著一臉恐懼。你瞭解到這是另一個時空中的自己，而他需要幫助。於是你在鏡子寫下
-        <div class="font-script my-2">這 會 有 用 的</div>
+        <div class="font-zh-script my-2">這 會 有 用 的</div>
         並透過鏡子遞給他一件物品⋯
       </template>
       <p>若你手上沒有道具卡，則由下一位持有道具卡的玩家觸發此效果。</p>
@@ -253,7 +253,7 @@
       <template slot="en-title"><span style="display: inline-block; transform: scaleX(-1);">Image in the Mirror</span></template>
       <template slot="story">
         這房間中，有一面古老的鏡子，你驚恐地看著鏡中自己的倒影，發現他不但自行動了起來，還帶著一臉疑惑。你瞭解到這是另一個時空中的自己，而他會幫助你。你的倒影在鏡子寫下
-        <div class="font-script my-2" style="transform: scaleX(-1);">這 會 有 用 的</div>
+        <div class="font-zh-script my-2" style="transform: scaleX(-1);">這 會 有 用 的</div>
         並透過鏡子遞給你一件物品⋯
       </template>
       <p>抽取１張道具卡。</p>
@@ -333,7 +333,7 @@
       <template slot="story">
         你腳下的地板，忽然滑落並鬆開⋯
       </template>
-      <p>若你在地下室，則由下一位不在地下室玩家觸發此效果。</p>
+      <p>若你位於地下室，則由下一位不在地下室玩家觸發此效果。</p>
       <p>放置一枚<Token name="Slide" />在此房。</p>
       <Roll0>請立即進行力量檢定嘗試控制滑道：</Roll0>
       <RollL>
@@ -353,7 +353,7 @@
       <Roll0>請立即進行知識檢定：</Roll0>
       <RollL>
         <RollT>5+</RollT>
-          <RollD>你瞭解他們曾經居住於此，你呼喚他們的名字，他們轉身向你走來，輕聲告訴你在這屋子裡隱藏的黑暗秘密。獲得１級知識。</RollD>
+          <RollD>你瞭解他們曾經居住於此，你呼喚他們的名字，他們轉身向你走來，輕聲告訴你在這宅邸裡隱藏的黑暗秘密。獲得１級知識。</RollD>
         <RollT>0-4</RollT>
           <RollD>你恐懼地退，不敢直視。</RollD>
       </RollL>
@@ -430,7 +430,7 @@
         牆壁的一部分滑了開來，一道發霉的通道正在等著你⋯
       </template>
       <p>放置一枚<Token name="Secret Passage" />在此房。</p>
-      <Roll0>請立即可擲３顆骰子，並放置另一枚標記於：</Roll0>
+      <Roll0>請立即擲３顆骰子，並放置另一枚標記於：</Roll0>
       <RollL>
         <RollT>6</RollT>
           <RollD>任意一間房間中。</RollD>
@@ -619,7 +619,7 @@
     <EventCard class="m-2" series="BHH" name="The Walls">
       <template slot="zh-title">牆</template>
       <template slot="story">
-        在這間溫暖的房間中，活生生的牆壁有如心跳得正動，你的心臟也跟著這房屋的節奏拍打。忽然間，你被吸入牆壁之中⋯
+        在這間溫暖的房間中，活生生的牆壁有如心跳得正動，你的心臟也跟著這宅邸的節奏拍打。忽然間，你被吸入牆壁之中⋯
       </template>
       <p>請立即抽取一張新的房間板塊，並移到此處。</p>
     </EventCard>
@@ -637,7 +637,7 @@
           <RollD>你黏住了</RollD>
       </RollL>
 
-      <p>若被黏住，保留此卡，並無法再進行任何行動或使用道具，直到掙脫為止。</p>
+      <p>若被黏住，保留此卡，並無法再進行任何行動或使用物品，直到掙脫為止。</p>
       <p>此後每回合一次，你皆可進行力量檢定達 4+ 嘗試掙脫。其他探險者也能用此方法幫你掙脫。檢定失敗的探險者，回合立即結束。</p>
       <p>若檢定三次失敗，你自動掙脫並丟棄此卡，從下回合開始正常行動。</p>
     </EventCard>

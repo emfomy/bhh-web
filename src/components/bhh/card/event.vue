@@ -1,5 +1,5 @@
 <template>
-  <Card ref="body" class="border-warning" :series="series">
+  <Card ref="body" :series="series">
     <slot slot="zh-title" name="zh-title" />
     <slot slot="en-title" name="en-title">{{ name }}</slot>
     <slot slot="story" name="story" />

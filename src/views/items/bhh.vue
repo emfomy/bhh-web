@@ -148,7 +148,7 @@
 
     <ItemCard class="m-2" series="BHH" name="Idol">
       <template slot="story">
-        祂選擇你或許是為了某些目地⋯像是活體獻祭⋯
+        祂選擇你或許是為了某些目的⋯像是活體獻祭⋯
       </template>
       <p>每回合一次，當你因進行檢定、戰鬥、或事件擲骰前，可摩擦神像並犧牲１級神志，額外多擲２顆骰（至多８顆）。</p>
     </ItemCard>
@@ -184,7 +184,7 @@
         手製的舊式音樂盒，在你腦海中繚繞一陣幽森的旋律。
       </template>
       <p>每回合一次，你可開啟或關閉<Item brief name="Music Box" />。</p>
-      <p>當<Item brief name="Music Box" />被開啟後，房內所有的探險者皆須進行神智檢定達 4+，若失敗，則被旋律催眠，並立即結束回合。</p>
+      <p>當<Item brief name="Music Box" />被開啟後，房內所有的探險者皆須進行神志檢定達 4+，若失敗，則被旋律催眠，並立即結束回合。</p>
       <p>當持有<Item brief name="Music Box" />被催眠時，<Item brief name="Music Box" />掉落至地面，並保持開啟狀態。</p>
     </ItemCard>
 
@@ -192,7 +192,7 @@
       <template slot="story">
         幫助自己從未如此輕鬆。
       </template>
-      <p>當你與其他探險者處於同一房間時，你可以使用<Item brief name="Pickpocket’s Glove" />，任意偷取該探險者所持有的其中一項道具。</p>
+      <p>當你與其他探險者處於同一房間時，你可以使用<Item brief name="Pickpocket’s Glove" />，任意偷取該探險者所持有的其中一項物品。</p>
       <p>使用後將<Item brief name="Pickpocket’s Glove" />丟棄。</p>
     </ItemCard>
 

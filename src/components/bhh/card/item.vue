@@ -1,5 +1,5 @@
 <template>
-  <Card ref="body" class="border-danger" :series="series" :usage="usage">
+  <Card ref="body" :series="series" :usage="usage">
     <template slot="zh-title">{{ zhName }}</template>
     <template slot="en-title">{{ name }}</template>
     <slot slot="story" name="story" />
