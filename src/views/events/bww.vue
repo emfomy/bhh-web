@@ -138,7 +138,7 @@
     <EventCard class="m-2" series="BWW" name="The Walls Have Eyes">
       <template slot="zh-title">牆上有眼</template>
       <template slot="story">
-        牆上掛著一排褪色的肖像畫，他們的眼睛看似跟隨著你的行動。難道這只是畫像的把戲？不，這些沈默的死人臉正試著告入你什麼事⋯
+        牆上掛著一排褪色的肖像畫，他們的眼睛看似跟隨著你的行動。難道這只是畫像的把戲？不，這些沈默的死人臉正試著告訴你什麼事⋯
       </template>
       <Roll0>請立即進行一次神志檢定：</Roll0>
       <RollL>
@@ -152,9 +152,9 @@
     </EventCard>
 
     <EventCard class="m-2" series="BWW" name="What Year is It!?">
-      <template slot="zh-title">今夕是何夕！？</template>
+      <template slot="zh-title">今夕是何夕</template>
       <template slot="story">
-        你穿過那道門並停下腳步，似乎曾今在幾年前來過此處。你發現窗映射出你的樣貌，而你的臉龐看起來是那麼的年輕。不過這次你早已不再天真⋯
+        你穿過那道門並停下腳步，你發現自己似乎曾在幾年前來過此處。窗映射出你的樣貌，而你的臉龐看起來是那麼的年輕。不過這次你早已不再天真⋯
       </template>
       <p>失去１點神志，並獲得１點力量和１點知識。</p>
       <p>若作祟已經發生，則另一方必須大聲朗讀他們劇本上的斜體字開場白及獲勝的故事文字。若作祟尚未發生，保留此牌直到作祟發生為止。</p>

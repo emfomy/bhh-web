@@ -1,6 +1,6 @@
 <template>
   <span>
-    <template v-if="brief === null">「{{ zhName }} {{ name }}」</template>
+    <template v-if="brief === undefined">〈{{ zhName }} {{ name }}〉</template>
     <template v-else>{{ zhName }}</template>
   </span>
 </template>

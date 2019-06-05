@@ -1,5 +1,5 @@
 <template>
-  <span>「{{ zhName }} {{ name }}」{{zhShape}}標記</span>
+  <span>〈{{ zhName }} {{ name }}〉{{zhShape}}標記</span>
 </template>
 
 <script>

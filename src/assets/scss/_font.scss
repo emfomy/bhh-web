@@ -1,15 +1,23 @@
-.font-zh-title {
-  font-family: 'Baoli TC';
+body {
+  font-family: 'Libian TC';
+  line-height: 90%;
 }
 
-.font-en-title {
-  font-family: 'Chalkduster';
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Chalkduster', 'Baoli TC';
 }
 
-.font-zh-story {
+.font-story {
   font-family: 'Xingkai TC';
+  font-weight: 700;
+  font-style: italic;
 }
 
-.font-zh-script {
+.font-story-card {
+  font-family: 'Xingkai TC';
+  font-weight: 700;
+}
+
+.font-writing {
   font-family: 'LingWai TC' !important;
 }

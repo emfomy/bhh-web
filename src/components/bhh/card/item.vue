@@ -6,6 +6,7 @@
     <slot slot="body" />
     <template slot="footer">
       <b-img class="ItemIcon" center src="@/assets/images/item_icon.png" />
+      <p class="mt-3"></p>
     </template>
   </Card>
 </template>
@@ -20,11 +21,11 @@ export default {
   components: {
     Card,
   },
-  props: [
-    'name',
-    'usage',
-    'series',
-  ],
+  props: {
+    name: String,
+    usage: String,
+    series: String,
+  },
   computed: {
     zhName() {
       console.assert(_(this.$share.items).has(this.name));

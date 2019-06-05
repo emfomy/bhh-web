@@ -21,11 +21,11 @@ export default {
   components: {
     Card,
   },
-  props: [
-    'name',
-    'usage',
-    'series',
-  ],
+  props: {
+    name: String,
+    usage: String,
+    series: String,
+  },
   computed: {
     zhName() {
       console.assert(_(this.$share.omens).has(this.name));

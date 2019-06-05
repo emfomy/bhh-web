@@ -1,5 +1,5 @@
 <template>
-  <span>「{{ zhName }} {{ name }}」</span>
+  <span>〈{{ zhName }} {{ name }}〉</span>
 </template>
 
 <script>

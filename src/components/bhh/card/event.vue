@@ -6,6 +6,7 @@
     <slot slot="body" />
     <template slot="footer">
       <b-img class="EventIcon" center src="@/assets/images/event_icon.png" />
+      <p class="mt-3"></p>
     </template>
   </Card>
 </template>
@@ -18,10 +19,10 @@ export default {
   components: {
     Card,
   },
-  props: [
-    'name',
-    'series',
-  ],
+  props: {
+    name: String,
+    series: String,
+  },
   methods: {
     downloadParam() {
       return this.$refs.body.downloadParam(`Event - ${this.series} - ${this.name}`);

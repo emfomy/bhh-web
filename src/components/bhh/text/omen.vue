@@ -1,6 +1,6 @@
 <template>
   <span>
-    <template v-if="brief === null">「{{ zhName }} {{ name }}」</template>
+    <template v-if="brief === undefined">〈{{ zhName }} {{ name }}〉</template>
     <template v-else>{{ zhName }}</template>
   </span>
 </template>
@@ -9,10 +9,10 @@
 import _ from 'lodash';
 
 export default {
-  props: {
-    name: null,
-    brief: null,
-  },
+  props: [
+    'name',
+    'brief',
+  ],
   computed: {
     zhName() {
       console.assert(_(this.$share.omens).has(this.name));

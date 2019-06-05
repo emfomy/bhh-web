@@ -240,8 +240,8 @@
     <EventCard class="m-2" series="BHH" name="Image in the Mirror">
       <template slot="zh-title">鏡中影像</template>
       <template slot="story">
-        這房間中，有一面古老的鏡子，你疑惑地看著鏡中自己的倒影，發現他不但自行動了起來，還帶著一臉恐懼。你瞭解到這是另一個時空中的自己，而他需要幫助。於是你在鏡子寫下
-        <div class="font-zh-script my-2">這 會 有 用 的</div>
+        這房間中，有一面古老的鏡子，你疑惑地看著鏡中自己的倒影，發現他不但自行動了起來，還帶著一臉恐懼。你瞭解到這是另一個時空中的自己，而他需要幫助。於是你在鏡面寫下
+        <div class="font-writing my-2">這 會 有 用 的</div>
         並透過鏡子遞給他一件物品⋯
       </template>
       <p>若你手上沒有道具卡，則由下一位持有道具卡的玩家觸發此效果。</p>
@@ -252,8 +252,8 @@
       <template slot="zh-title"><span style="display: inline-block; transform: scaleX(-1);">鏡中影像</span></template>
       <template slot="en-title"><span style="display: inline-block; transform: scaleX(-1);">Image in the Mirror</span></template>
       <template slot="story">
-        這房間中，有一面古老的鏡子，你驚恐地看著鏡中自己的倒影，發現他不但自行動了起來，還帶著一臉疑惑。你瞭解到這是另一個時空中的自己，而他會幫助你。你的倒影在鏡子寫下
-        <div class="font-zh-script my-2" style="transform: scaleX(-1);">這 會 有 用 的</div>
+        這房間中，有一面古老的鏡子，你驚恐地看著鏡中自己的倒影，發現他不但自行動了起來，還帶著一臉疑惑。你瞭解到這是另一個時空中的自己，而他會幫助你。你的倒影在鏡面寫下
+        <div class="font-writing my-2" style="transform: scaleX(-1);">這 會 有 用 的</div>
         並透過鏡子遞給你一件物品⋯
       </template>
       <p>抽取１張道具卡。</p>
@@ -645,7 +645,7 @@
     <EventCard class="m-2" series="BHH" name="What the…?">
       <template slot="zh-title">咦？</template>
       <template slot="story">
-        當你回樓轉向經過的房間時，卻什麼也沒看到，只留下一層迷霧⋯
+        當你回頭轉向經過的房間時，卻什麼也沒看到，只留下一層迷霧⋯
       </template>
       <p>請將你身處的房間板塊移至同一樓層中，任一尚未探索的門後，房間上的所有標記皆一起移動。</p>
     </EventCard>
