@@ -23,12 +23,19 @@ const tokenTriangle = {
   'Speed Roll': '速度檢定',
 };
 
+const tokenPentagon = {
+  Item: '物品',
+};
+
 const token = {};
 _(tokenSquare).forEach((name, key) => {
   token[key] = { name, shape: 'square' };
 });
 _(tokenTriangle).forEach((name, key) => {
   token[key] = { name, shape: 'triangle' };
+});
+_(tokenPentagon).forEach((name, key) => {
+  token[key] = { name, shape: 'pentagon' };
 });
 
 export default token;

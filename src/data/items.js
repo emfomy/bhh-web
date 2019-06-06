@@ -22,4 +22,16 @@ export default {
   Revolver: '左輪手槍',
   'Sacrificial Dagger': '獻祭匕首',
   'Smelling Salts': '嗅鹽',
+
+  Blueprint: '藍圖',
+  Boomstick: '火槍',
+  Camcorder: '攝影機',
+  'Ceremonial Robe': '儀式法袍',
+  Chainsaw: '電鋸',
+  Chalk: '粉筆',
+  Device: '電器設備',
+  Effigy: '公仔娃娃',
+  Locket: '墜飾',
+  'Snake Oil': '蛇油',
+  Teapot: '茶壺',
 };

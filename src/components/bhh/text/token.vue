@@ -8,6 +8,7 @@ import _ from 'lodash';
 const zhShape = {
   square: '方形',
   triangle: '三角',
+  pentagon: '五角',
 };
 
 export default {

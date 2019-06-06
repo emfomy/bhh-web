@@ -5,7 +5,9 @@
       <h6 class="text-center text-milk-dark" style="text-transform: uppercase;"><slot name="en-title">???</slot></h6>
       <p class="text-center font-story-card mb-0"><slot name="story">???</slot></p>
       <hr class="my-2" />
-      <slot name="body" />
+      <div class="CardRule">
+        <slot name="body" />
+      </div>
     </div>
 
     <h6 v-if="usage" class="CardType position-absolute">{{ zhType }}</h6>
@@ -57,8 +59,8 @@ export default {
         el: this.$el,
         name,
         scale: 3,
-        width: 215,
-        height: 400,
+        width: this.$el.offsetWidth,
+        height: this.$el.offsetHeight,
       };
     },
   },
@@ -71,12 +73,12 @@ export default {
 
 .Card {
 
-  font-size: 10px;
+  font-size: (11 / 12) * 1rem !important;
 
-  width:      57mm;
-  min-width:  57mm;
-  height:     106mm;
-  min-height: 106mm;
+  width:      (215 / 12) * 1rem;
+  min-width:  (215 / 12) * 1rem;
+  height:     (400 / 12) * 1rem;
+  min-height: (400 / 12) * 1rem;
 
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -108,5 +110,9 @@ export default {
   right: 1.75rem;
   height: 1rem;
   width:  1rem;
+}
+
+.CardRule {
+  line-height: 100%;
 }
 </style>

@@ -460,7 +460,7 @@
       <template slot="story">
         風勢持續地增強，緩慢地漸強成刺耳的咆叫聲⋯
       </template>
-      <Roll0>請所有位於<Room name="Gardens" />、<Room name="Graveyard" />、<Room name="Patio" />、<Room name="Tower" />、<Room name="Balcony" />、以及任何窗口向外的房間的探險者，立即進行力量檢定：</Roll0>
+      <Roll0>請所有位於<Room name="Gardens" />、<Room name="Graveyard" />、<Room name="Patio" />、<Room name="Tower" />、<Room name="Balcony" />、以及任何窗口向外房間的探險者，立即進行力量檢定：</Roll0>
       <RollL>
         <RollT>5+</RollT>
           <RollD>穩住腳步</RollD>
@@ -478,7 +478,7 @@
       <template slot="story">
         在地底下，任何事物都變得沈默，彷彿連呼吸聲都消失了⋯
       </template>
-      <Roll0>請所有位於地下式的探險者，立即進行神志檢定：</Roll0>
+      <Roll0>請所有位於地下室的探險者，立即進行神志檢定：</Roll0>
       <RollL>
         <RollT>4+</RollT>
           <RollD>你冷靜地等待聽覺恢復。</RollD>

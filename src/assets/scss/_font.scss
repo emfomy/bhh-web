@@ -1,10 +1,14 @@
+html {
+  font-size: 18px;
+}
+
 body {
   font-family: 'Libian TC';
-  line-height: 90%;
+  line-height: 1.25;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Chalkduster', 'Baoli TC';
+  font-family: 'Chalkduster', 'Weibei TC';
 }
 
 .font-story {
@@ -19,5 +23,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .font-writing {
-  font-family: 'LingWai TC' !important;
+  font-family: 'HanziPen TC' !important;
 }

@@ -42,7 +42,7 @@ export default {
 
 <style scoped lang="scss">
 .Card {
-  background-image: url('../../../assets/images/omen_background.png');
+  background-image: url('~@/assets/images/omen_background.png');
 }
 
 .OmenIcon {

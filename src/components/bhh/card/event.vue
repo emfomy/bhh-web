@@ -6,7 +6,7 @@
     <slot slot="body" />
     <template slot="footer">
       <b-img class="EventIcon" center src="@/assets/images/event_icon.png" />
-      <p class="mt-3"></p>
+      <!-- <p class="invisible mt-3">。</p> -->
     </template>
   </Card>
 </template>
@@ -33,7 +33,7 @@ export default {
 
 <style scoped lang="scss">
 .Card {
-  background-image: url('../../../assets/images/event_background.png');
+  background-image: url('~@/assets/images/event_background.png');
 }
 
 .EventIcon {

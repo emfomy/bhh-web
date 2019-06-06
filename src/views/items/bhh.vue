@@ -249,7 +249,7 @@
         深深吸了一口⋯
       </template>
       <p>可自行使用，或用於治療同房的探險者。</p>
-      <p>被<Item brief name="Smelling Salts" />治療的探險者，將知識至初始值。</p>
+      <p>被<Item brief name="Smelling Salts" />治療的探險者，將知識恢復至初始值。</p>
       <p>使用後將<Item brief name="Smelling Salts" />丟棄。</p>
     </ItemCard>
 
