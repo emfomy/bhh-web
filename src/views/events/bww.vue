@@ -4,7 +4,7 @@
     <EventCard class="m-2" series="BWW" name="Acupuncture">
       <template slot="zh-title">針刺</template>
       <template slot="story">
-        房內點滿了令人愉悅的蠟燭，一名黑色長髮的女人穿著樸素外衣，用著溫暖的微笑歡迎你的到來。女人舉起一根在燭光下閃閃發光、比她頭髮還要細的長針，幾乎就要刺入你的眼裡⋯
+        房內點滿了令人愉悅的蠟燭，<br />黑色長髮的女人穿著樸素外衣，<br />用著溫暖的微笑歡迎你的到來。<br />女人舉起一根在燭光下閃閃發光、<br />比她頭髮還要細的長針，<br />幾乎就要刺入你的眼裡⋯
       </template>
       <Roll0>立即移至任一相鄰的房間。失去１級神志，或是進行力量檢定嘗試反抗：</Roll0>
       <RollL>
@@ -20,7 +20,7 @@
     <EventCard class="m-2" series="BWW" name="Burial Mound">
       <template slot="zh-title">墳塚</template>
       <template slot="story">
-        散落的碎石掩埋著一具新鮮的屍體⋯太新鮮了⋯
+        散落的碎石掩埋著一具<br />新鮮的屍體⋯太新鮮了⋯
       </template>
       <p>放置一枚<Token name="Burial Mound" />在此房。</p>
       <p>作祟發生後，任何探險者離開此房間時皆受到死屍的攻擊。其右方的玩家代替死屍，進行力量４的攻擊。</p>
@@ -30,7 +30,7 @@
     <EventCard class="m-2" series="BWW" name="Contract">
       <template slot="zh-title">契約</template>
       <template slot="story">
-        這裡有份以靈魂為代價，給予你力量的契約。好契約不簽嗎？
+        這裡有份以靈魂為代價，<br />給予你力量的契約。<br />好契約不簽嗎？
       </template>
       <p>你可自由選擇是否簽署此契約。</p>
       <Roll0>若你決定簽署此契約，進行一次知識檢定以閱讀此文件：</Roll0>
@@ -49,7 +49,7 @@
     <EventCard class="m-2" series="BWW" name="Flytrap">
       <template slot="zh-title">捕蠅草</template>
       <template slot="story">
-        一株巨大詭異的植物聳立在燈光及各種管線間。它的葉子枯黃、巨大的花莢半開，期待著營養的補給。它需要水分⋯你的血⋯
+        一株巨大詭異的植物<br />聳立在燈光及各種管線間。<br />它的葉子枯黃、巨大的花莢半開，<br />期待著營養的補給。<br />它需要水分⋯你的血⋯
       </template>
       <p>立即受到１顆骰的物理傷害。</p>
       <p>放置一枚<Token name="Plant" />在此房。</p>
@@ -59,7 +59,7 @@
     <EventCard class="m-2" series="BWW" name="Ghost in The Machine">
       <template slot="zh-title">鬼入鏡</template>
       <template slot="story">
-        一陣劈哩啪啦的聲響，伴隨著各種駭人的影像，在眼前的電視機內閃爍著。透過白花花的雜訊，你辨識出一個女孩，在這宅邸內某處玩耍。她停下動作並轉頭，向你招手示意加入他的遊戲。正當你還沒回過神來，電視螢幕已陷入一片黑暗⋯
+        一陣劈哩啪啦的聲響，<br />伴隨著各種駭人的影像，<br />在眼前的電視機內閃爍著。<br />透過白花花的雜訊，<br />你辨識出一個女孩，<br />在這宅邸內某處玩耍。<br />她停下動作並轉頭，<br />向你招手示意加入他的遊戲。<br />正當你還沒回過神來，<br />電視螢幕已陷入一片黑暗⋯
       </template>
       <Roll0>請立即進行神志檢定：</Roll0>
       <RollL>
@@ -108,7 +108,7 @@
     <EventCard class="m-2" series="BWW" name="Mutant Housepet">
       <template slot="zh-title">異變寵物</template>
       <template slot="story">
-        從牆壁傳來一聲貓叫聲。真的是貓嗎？你這麼想著。接著從同一個位置要爆出了一聲嚎叫。難道兩隻貓？但搔抓的聲音要只有一個。難道他有兩個頭？你試著將牆面鑿開一探究竟⋯
+        從牆壁傳來一聲貓叫聲。<br />真的是貓嗎？你這麼想著。<br />接著從同一個位置又爆出了<br />一聲嚎叫。難道兩隻貓？<br />但搔抓的聲音又只有一個。<br />難道他有兩個頭？<br />你試著將牆面鑿開一探究竟⋯
       </template>
       <Roll0>請立即進行一次速度檢定：</Roll0>
       <RollL>
@@ -122,7 +122,7 @@
     <EventCard class="m-2" series="BWW" name="The Left Hand">
       <template slot="zh-title">左手</template>
       <template slot="story">
-        你的手開始發癢，然後燒了起來！疼動不斷蔓延，而你只能尖叫，並試圖把它與你的身體分離！但尖叫聲在喉嚨嘎然而止。突然，你發現自己沒有任何感覺，你試圖動動手指，卻發現那手彷彿有意識地向你的喉嚨靠近⋯
+        你的手開始發癢，然後燒了起來！<br />疼動不斷蔓延，而你卻只能尖叫，<br />並試圖把它與你的身體分離！<br />但尖叫聲在喉嚨嘎然而止。<br />突然，你發現自己沒有任何知覺，<br />你試圖動動手指，卻發現那手<br />彷彿有意識地向你的喉嚨靠近⋯
       </template>
       <Roll0>請選擇一項：</Roll0>
       <RollL>
@@ -138,7 +138,7 @@
     <EventCard class="m-2" series="BWW" name="The Walls Have Eyes">
       <template slot="zh-title">牆上有眼</template>
       <template slot="story">
-        牆上掛著一排褪色的肖像畫，他們的眼睛看似跟隨著你的行動。難道這只是畫像的把戲？不，這些沈默的死人臉正試著告訴你什麼事⋯
+        牆上掛著一排褪色的肖像畫，<br />他們的眼睛看似跟隨著你的行動。<br />難道這只是畫像的把戲？<br />不，這些沈默的死人臉<br />正試著告訴你什麼事⋯
       </template>
       <Roll0>請立即進行一次神志檢定：</Roll0>
       <RollL>
@@ -154,7 +154,7 @@
     <EventCard class="m-2" series="BWW" name="What Year is It!?">
       <template slot="zh-title">今夕是何夕</template>
       <template slot="story">
-        你穿過那道門並停下腳步，你發現自己似乎曾在幾年前來過此處。窗映射出你的樣貌，而你的臉龐看起來是那麼的年輕。不過這次你早已不再天真⋯
+        你穿過那道門並停下腳步，<br />發現自己似乎曾在幾年前來過。<br />窗戶映射出你的樣貌，<br />而你的臉龐看起來仍是那麼年輕。<br />不過這次你早已不再天真⋯
       </template>
       <p>失去１點神志，並獲得１點力量和１點知識。</p>
       <p>若作祟已經發生，則另一方必須大聲朗讀他們劇本上的斜體字開場白及獲勝的故事文字。若作祟尚未發生，保留此牌直到作祟發生為止。</p>

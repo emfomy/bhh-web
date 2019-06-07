@@ -220,7 +220,7 @@
       <template slot="story">
         外型老舊，但看似極具殺傷力的武器。
       </template>
-      <p>你可以使用<Item brief name="Revolver" />進行速度攻擊，防禦方使用速度進行防禦，並受到物理傷害。</p>
+      <p>你可以使用<Item brief name="Revolver" />進行速度攻擊，防禦方亦用速度進行防禦，並受到物理傷害。</p>
       <p>當你使用<Item brief name="Revolver" />進行速度攻擊，額外多擲１顆骰（至多８顆）。</p>
       <p>使用<Item brief name="Revolver" />，你可對任何視線內（透過任何未受阻礙的門可看到）的對手進行攻擊，若攻擊失敗，你不會被反擊。</p>
       <p><Item brief name="Revolver" />不得用於防禦。</p>

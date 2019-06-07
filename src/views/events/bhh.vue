@@ -4,7 +4,7 @@
     <EventCard class="m-2" series="BHH" name="A Moment of Hope">
       <template slot="zh-title">希望時刻</template>
       <template slot="story">
-        房間湧現出不可思議的正面能量，似乎有什麼正努力對抗著這宅邸裡的邪惡勢力。
+        房間湧現出不可思議的正面能量，<br />似乎有什麼正努力對抗著<br />這宅邸裡的邪惡勢力。
       </template>
       <p>放置一枚<Token name="Blessing" />在此房。</p>
       <p>此後，在此房內進行的任何檢定，皆多擲１顆骰（至多８顆）。</p>
@@ -13,7 +13,7 @@
 
     <EventCard class="m-2" series="BHH" name="Angry Being">
       <template slot="zh-title">惱人的生物</template>
-      <template slot="story">牠從牆上的黏液中冒出。而且⋯就在你身邊⋯</template>
+      <template slot="story">牠從牆上的黏液中冒出。<br />而且⋯就在你身邊⋯</template>
       <Roll0>請立即進行速度檢定：</Roll0>
       <RollL>
         <RollT>5+</RollT>
@@ -28,7 +28,7 @@
     <EventCard class="m-2" series="BHH" name="Bloody Vision">
       <template slot="zh-title">血腥幻象</template>
       <template slot="story">
-        牆壁因血液而潮濕，鮮血從天花板不停滴下，流過牆壁、傢俱，直到你的鞋子⋯轉眼之間，又全都消失⋯
+        牆壁因血液而潮濕，<br />鮮血從天花板不停滴下，<br />流過牆壁、傢俱，直到你的鞋子⋯<br />轉眼之間，又全都消失⋯
       </template>
       <Roll0>請立即進行神志檢定：</Roll0>
       <RollL>
@@ -44,7 +44,7 @@
     <EventCard class="m-2" series="BHH" name="Burning Man">
       <template slot="zh-title">燃燒之人</template>
       <template slot="story">
-        全身著火的男子從房間跑過，濃膩的水泡在皮膚上冒出並破裂，最後只剩下炙熱的頭骨，頭顱撞擊至地面上後，持續滾動⋯
+        全身著火的男子從房間跑過，<br />濃膩的水泡在皮膚上冒出並破裂，<br />最後只剩下炙熱的頭骨，<br />頭顱撞擊至地面後，持續滾動⋯
       </template>
       <Roll0>請立即進行神志檢定：</Roll0>
       <RollL>
@@ -60,7 +60,7 @@
     <EventCard class="m-2" series="BHH" name="Closet Door">
       <template slot="zh-title">壁櫥</template>
       <template slot="story">
-        壁櫥的門半掩著，裡面肯定有什麼東西躲藏著⋯
+        壁櫥的門半掩著，<br />裡面肯定有什麼東西躲藏著⋯
       </template>
       <p>放置一枚<Token name="Closet" />在此房。</p>
       <Roll0>每回合一次，任何探險者皆可擲２顆骰子嘗試打開壁櫥：</Roll0>
@@ -77,7 +77,7 @@
     <EventCard class="m-2" series="BHH" name="Creepy Crawlies">
       <template slot="zh-title">恐怖爬蟲</template>
       <template slot="story">
-        成千上萬的爬蟲，落在你的皮膚上，鑽進衣服、頭髮之中⋯
+        成千上萬的爬蟲，<br />落在你的皮膚上，<br />鑽進衣服、頭髮之中⋯
       </template>
       <Roll0>請立即進行神志檢定：</Roll0>
       <RollL>
@@ -93,7 +93,7 @@
     <EventCard class="m-2" series="BHH" name="Creepy Puppet">
       <template slot="zh-title">陰森傀儡</template>
       <template slot="story">
-        散段的雜物中，你發現一個令你毛骨悚然的傀儡。在你們四目相接時，他突然拿起小小的矛向你跳去⋯
+        散亂的雜物中，<br />你發現一個令你毛骨悚然的傀儡。<br />在你們四目相接時，<br />他突然拿起小小的矛向你跳去⋯
       </template>
       <p>你的右方的玩家代替傀儡，對你的進行力量４的攻擊。</p>
       <p>若你因此受傷，除你以外擁有<Omen name="Spear" />的玩家，獲得２級力量。</p>
@@ -121,7 +121,7 @@
     <EventCard class="m-2" series="BHH" name="Disquieting Sounds">
       <template slot="zh-title">令人不安的聲響</template>
       <template slot="story">
-        嬰兒的哭泣聲殷殷響起，控訴著被遺棄的命運。緊接著是一聲尖叫，以及刺耳的玻璃碎裂聲⋯接著，一切恢復寂靜⋯
+        嬰兒的哭泣聲殷殷響起，<br />控訴著被遺棄的命運。<br />緊接著是一聲尖叫，<br />以及刺耳的玻璃碎裂聲⋯<br />接著，一切恢復寂靜⋯
       </template>
       <Roll0>擲６顆骰子：</Roll0>
       <RollL>
@@ -144,7 +144,7 @@
     <EventCard class="m-2" series="BHH" name="Footsteps">
       <template slot="zh-title">腳印</template>
       <template slot="story">
-        地板沉緩地發出嘎軋的聲響，塵土向上飛揚，骯髒的地板上浮現了一步步的腳印。而就在它們快碰到你時，卻消失了⋯
+        地板沉緩地發出嘎軋的聲響，<br />塵土向上飛揚，骯髒的地板上<br />浮現了一步步的腳印。<br />而就在它們快碰到你時，<br />卻消失了⋯
       </template>
       <Roll0>請立即擲１顆骰（如果你位於<Room name="Crypt" />，額外多擲１顆）：</Roll0>
       <RollL>
@@ -164,7 +164,7 @@
     <EventCard class="m-2" series="BHH" name="Funeral">
       <template slot="zh-title">葬儀</template>
       <template slot="story">
-        你看見一口打開的棺材，而你正躺在裡面⋯
+        你看見一口打開的棺材，<br />而你正躺在裡面⋯
       </template>
       <Roll0>請立即進行神志檢定：</Roll0>
       <RollL>
@@ -180,7 +180,7 @@
     <EventCard class="m-2" series="BHH" name="Grave Dirt">
       <template slot="zh-title">墳土飛揚</template>
       <template slot="story">
-        這房間覆蓋著一層厚厚的墳土，塵土飄至皮膚，你吸入肺中而咳嗽⋯
+        這房間覆蓋著一層厚厚的墳土，<br />塵土飄至皮膚，<br />你吸入肺中而咳嗽⋯
       </template>
       <Roll0>請立即進行力量檢定：</Roll0>
       <RollL>
@@ -195,7 +195,7 @@
     <EventCard class="m-2" series="BHH" name="Groundskeeper">
       <template slot="zh-title">園丁</template>
       <template slot="story">
-        你轉身看見一名身穿園丁服的男人，他舉起鏟子，朝你衝來。而就在鏟子快擊中你時，卻消失了，只留下滿地的泥濘⋯
+        你轉身看見一名穿園丁服的男人，<br />他舉起鏟子，朝你衝來。<br />而就在鏟子快擊中你時，<br />卻消失了，只留下滿地的泥濘⋯
       </template>
       <Roll0>請立即進行知識檢定：</Roll0>
       <RollL>
@@ -209,7 +209,7 @@
     <EventCard class="m-2" series="BHH" name="Hanged Men">
       <template slot="zh-title">上吊之人</template>
       <template slot="story">
-        一陣寒風吹過房間，三名男人被破爛麻繩吊掛在天花板上。他們靜靜地擺動者，用冰冷、死亡的眼神注視著你，接著逐漸化為塵土，令你感到窒息⋯
+        一陣寒風吹過房間，三名男人<br />被破爛麻繩吊掛在天花板上。<br />他們靜靜地擺動者，<br />用冰冷、死亡的眼神注視著你，<br />接著逐漸化為塵土，<br />令你感到窒息⋯
       </template>
       <Roll0>請立即對所有屬性進行檢定：</Roll0>
       <RollL>
@@ -224,7 +224,7 @@
     <EventCard class="m-2" series="BHH" name="Hideous Shriek">
       <template slot="zh-title">駭人驚叫</template>
       <template slot="story">
-        一開始聽起來像耳語，但最後卻變成了撕裂靈魂的驚叫⋯
+        一開始聽起來像耳語，<br />但最後卻變成了撕裂靈魂的驚叫⋯
       </template>
       <Roll0>請所有探險者立即進行神志檢定：</Roll0>
       <RollL>
@@ -240,7 +240,7 @@
     <EventCard class="m-2" series="BHH" name="Image in the Mirror">
       <template slot="zh-title">鏡中影像</template>
       <template slot="story">
-        這房間中，有一面古老的鏡子，你疑惑地看著鏡中自己的倒影，發現他不但自行動了起來，還帶著一臉恐懼。你瞭解到這是另一個時空中的自己，而他需要幫助。於是你在鏡面寫下
+        這房間中，有一面古老的鏡子，<br />你疑惑地看著鏡中自己的倒影，<br />發現他不但自行動了起來，<br />還帶著一臉恐懼。<br />你瞭解到這是不同時空中的自己，<br />而他需要幫助。於是你在鏡面寫下
         <div class="font-writing my-2">這 會 有 用 的</div>
         並透過鏡子遞給他一件物品⋯
       </template>
@@ -252,7 +252,7 @@
       <template slot="zh-title"><span style="display: inline-block; transform: scaleX(-1);">鏡中影像</span></template>
       <template slot="en-title"><span style="display: inline-block; transform: scaleX(-1);">Image in the Mirror</span></template>
       <template slot="story">
-        這房間中，有一面古老的鏡子，你驚恐地看著鏡中自己的倒影，發現他不但自行動了起來，還帶著一臉疑惑。你瞭解到這是另一個時空中的自己，而他會幫助你。你的倒影在鏡面寫下
+        這房間中，有一面古老的鏡子，<br />你驚恐地看著鏡中自己的倒影，<br />發現他不但自行動了起來，<br />還帶著一臉疑惑。<br />你瞭解到這是不同時空中的自己，<br />而他會幫助你。倒影在鏡面寫下
         <div class="font-writing my-2" style="transform: scaleX(-1);">這 會 有 用 的</div>
         並透過鏡子遞給你一件物品⋯
       </template>
@@ -262,7 +262,7 @@
     <EventCard class="m-2" series="BHH" name="It is Meant to Be">
       <template slot="zh-title">命中註定</template>
       <template slot="story">
-        你跌坐在地上，未來的影像閃過你的腦海⋯
+        你跌坐在地上，<br />未來的影像閃過你的腦海⋯
       </template>
       <Roll0>請選擇一項事件發生：</Roll0>
       <RollL>
@@ -288,7 +288,7 @@
     <EventCard class="m-2" series="BHH" name="Lights Out">
       <template slot="zh-title">燈熄了</template>
       <template slot="story">
-        你的手電筒忽然熄滅。別擔心，總會有人帶著電池的⋯
+        你的手電筒忽然熄滅。<br />別擔心，總會有人帶著電池的⋯
       </template>
       <p>保留此卡，往後的回合你的行動步數降至１格。</p>
       <p>直到你回合結束時，有其他探險者與你處在同一房間之中，棄掉卡片並恢復正常移動。</p>
@@ -298,7 +298,7 @@
     <EventCard class="m-2" series="BHH" name="Locked Safe">
       <template slot="zh-title">上鎖的保險箱</template>
       <template slot="story">
-        在肖像畫後方的牆上，你發現了一個隱藏的保險箱。當然，它肯定有某種陷阱⋯
+        在肖像畫後方的牆上，<br />你發現了一個隱藏的保險箱。<br />當然，它肯定有某種陷阱⋯
       </template>
       <p>放置一枚<Token name="Safe" />在此房。</p>
       <Roll0>每回合一次，任何探險者皆可進行知識檢定嘗試打開保險箱：</Roll0>
@@ -315,7 +315,7 @@
     <EventCard class="m-2" series="BHH" name="Mists From the Walls">
       <template slot="zh-title">壁上霧靄</template>
       <template slot="story">
-        霧氣從牆上湧現，煙霧之中浮現了滿滿的人臉⋯有些看來甚至不像人類⋯
+        霧氣從牆上湧現，<br />煙霧之中浮現了滿滿的人臉⋯<br />有些看來甚至不像人類⋯
       </template>
       <Roll0>所有位於地下室的玩家，立即進行神志檢定：</Roll0>
       <RollL>
@@ -348,7 +348,7 @@
     <EventCard class="m-2" series="BHH" name="Night View">
       <template slot="zh-title">暗夜景象</template>
       <template slot="story">
-        一對幽魂情侶掠過你的面前，身穿結婚禮服無聲地漫步著⋯
+        一對幽魂情侶掠過你的面前，<br />身穿結婚禮服無聲地漫步著⋯
       </template>
       <Roll0>請立即進行知識檢定：</Roll0>
       <RollL>
@@ -362,7 +362,7 @@
     <EventCard class="m-2" series="BHH" name="Phone Call">
       <template slot="zh-title">鈴鈴鈴⋯</template>
       <template slot="story">
-        房內的電話忽然想起，你不自覺地接起這通電話⋯
+        房內的電話忽然想起，<br />你不自覺地接起這通電話⋯
       </template>
       <Roll0>請立即擲２顆骰子，一名和藹的奶奶堆你說：</Roll0>
       <RollL>
@@ -380,7 +380,7 @@
     <EventCard class="m-2" series="BHH" name="Possession">
       <template slot="zh-title">著魔</template>
       <template slot="story">
-        牆上分裂出數道黑影，你一時受到震驚而無法動作。黑影卻仍包圍著，一股惡寒從你心裡冷出來⋯
+        牆上分裂出數道黑影，<br />你一時受到震驚而無法動作。<br />黑影卻仍包圍著，<br />一股惡寒從你心裡冷出來⋯
       </template>
       <Roll0>請立即選擇任一種屬性進行檢定：</Roll0>
       <RollL>
@@ -409,7 +409,7 @@
     <EventCard class="m-2" series="BHH" name="Rotten">
       <template slot="zh-title">腐敗</template>
       <template slot="story">
-        這坊間的味道簡直糟透了！聞起來像死亡，有如屠宰場的鮮血⋯
+        這坊間的味道簡直糟透了！<br />聞起來像死亡，<br />有如屠宰場的鮮血⋯
       </template>
       <Roll0>請立即進行神志檢定：</Roll0>
       <RollL>
@@ -427,7 +427,7 @@
     <EventCard class="m-2" series="BHH" name="Secret Passage">
       <template slot="zh-title">秘密通道</template>
       <template slot="story">
-        牆壁的一部分滑了開來，一道發霉的通道正在等著你⋯
+        牆壁的一部分滑了開來，<br />一道發霉的通道正在等著你⋯
       </template>
       <p>放置一枚<Token name="Secret Passage" />在此房。</p>
       <Roll0>請立即擲３顆骰子，並放置另一枚標記於：</Roll0>
@@ -448,7 +448,7 @@
     <EventCard class="m-2" series="BHH" name="Secret Stairs">
       <template slot="zh-title">秘密階梯</template>
       <template slot="story">
-        一道毛骨悚然的聲響環繞著你，你發現了一個秘密階梯⋯
+        一道毛骨悚然的聲響環繞著你，<br />你發現了一個秘密階梯⋯
       </template>
       <p>放置一枚<Token name="Secret Stairs" />在此房，並放置另一枚標記於另一樓層的任意一間房間中。</p>
       <p>你現在就可以使用祕密階梯，就算你已耗盡行動步數亦可。若你選擇現在使用階梯，到達新房間時，必須再抽取１張事件卡。</p>
@@ -458,7 +458,7 @@
     <EventCard class="m-2" series="BHH" name="Shrieking Wind">
       <template slot="zh-title">尖聲狂風</template>
       <template slot="story">
-        風勢持續地增強，緩慢地漸強成刺耳的咆叫聲⋯
+        風勢持續地增強，<br />緩慢地漸強成刺耳的咆嘯聲⋯
       </template>
       <Roll0>請所有位於<Room name="Gardens" />、<Room name="Graveyard" />、<Room name="Patio" />、<Room name="Tower" />、<Room name="Balcony" />、以及任何窗口向外房間的探險者，立即進行力量檢定：</Roll0>
       <RollL>
@@ -476,7 +476,7 @@
     <EventCard class="m-2" series="BHH" name="Silence">
       <template slot="zh-title">寂靜</template>
       <template slot="story">
-        在地底下，任何事物都變得沈默，彷彿連呼吸聲都消失了⋯
+        在地底下，任何事物都變得沈默，<br />彷彿連呼吸聲都消失了⋯
       </template>
       <Roll0>請所有位於地下室的探險者，立即進行神志檢定：</Roll0>
       <RollL>
@@ -492,7 +492,7 @@
     <EventCard class="m-2" series="BHH" name="Skeletons">
       <template slot="zh-title">骨骸</template>
       <template slot="story">
-        即使成了骨骸，母親與孩子仍然緊緊擁抱著⋯
+        即使成了骨骸，<br />母親與孩子仍然緊緊擁抱著⋯
       </template>
       <p>放置一枚<Token name="Skeletons" />在此房。</p>
       <Roll0>每回合一次，任何探險者皆可進行神志檢定嘗試挖掘骨骸：</Roll0>
@@ -507,7 +507,7 @@
     <EventCard class="m-2" series="BHH" name="Smoke">
       <template slot="zh-title">煙霧</template>
       <template slot="story">
-        煙霧在你四周翻騰，你一邊咳嗽，一邊擦著眼淚⋯
+        煙霧在你四周翻騰，<br />你一邊咳嗽、一邊擦著眼淚⋯
       </template>
       <p>放置一枚<Token name="Smoke" />在此房。</p>
       <p>煙霧會阻礙視線。</p>
@@ -518,7 +518,7 @@
     <EventCard class="m-2" series="BHH" name="Something Hidden">
       <template slot="zh-title">隱藏著什麼⋯</template>
       <template slot="story">
-        這房間似乎有些古怪，但到底會是什麼呢？這持續困擾著你⋯
+        這房間似乎有些古怪，<br />但到底會是什麼呢？<br />這問題持續困擾著你⋯
       </template>
       <Roll0>請立即進行神志檢定以找出原因：</Roll0>
       <RollL>
@@ -532,7 +532,7 @@
     <EventCard class="m-2" series="BHH" name="Something Slimy">
       <template slot="zh-title">黏滑之物</template>
       <template slot="story">
-        在你腳踝上的是什麼東西？是一隻蟲？是誰的觸角？還是一隻死人的手⋯
+        在你腳踝上的是什麼東西？<br />是一隻蟲？是誰的觸角？<br />還是一隻死人的手⋯
       </template>
       <Roll0>請立即進行速度檢定：</Roll0>
       <RollL>
@@ -548,7 +548,7 @@
     <EventCard class="m-2" series="BHH" name="Spider">
       <template slot="zh-title">蜘蛛</template>
       <template slot="story">
-        拳頭般大小的蜘蛛，突然落在你的肩膀上，爬入你的頭髮⋯
+        拳頭般大小的蜘蛛，<br />突然落在你的肩膀上，<br />爬入你的頭髮⋯
       </template>
       <Roll0>請立即進行速度檢定嘗試撥開他，或是進行神志檢定嘗試保持冷靜：</Roll0>
       <RollL>
@@ -578,7 +578,7 @@
     <EventCard class="m-2" series="BHH" name="The Lost One">
       <template slot="zh-title">迷失之魂</template>
       <template slot="story">
-        一名身穿美國內戰晚禮服的女子，正揮手招喚著你，不久後，你便陷入了催眠中⋯
+        一名身穿美國內戰晚禮服的女子，<br />正揮手招喚著你，<br />不久後，你便陷入了催眠中⋯
       </template>
       <Roll0>請立即進行知識檢定：</Roll0>
       <RollL>
@@ -605,7 +605,7 @@
     <EventCard class="m-2" series="BHH" name="The Voice">
       <template slot="zh-title">人聲</template>
       <template slot="story">
-        『我在地底下，被埋在地底下⋯』微弱的聲音只說出這樣一句，便不再發聲⋯
+        「我在地底下，被埋在地底下⋯」<br />微弱的聲音只說出這樣一句，<br />便不再發聲⋯
       </template>
       <Roll0>請立即進行知識檢定：</Roll0>
       <RollL>
@@ -619,7 +619,7 @@
     <EventCard class="m-2" series="BHH" name="The Walls">
       <template slot="zh-title">牆</template>
       <template slot="story">
-        在這間溫暖的房間中，活生生的牆壁有如心跳得正動，你的心臟也跟著這宅邸的節奏拍打。忽然間，你被吸入牆壁之中⋯
+        在這間溫暖的房間中，<br />活生生的牆壁有如心跳得正動，<br />你的心臟也跟著這宅邸的節奏拍打。忽然間，你被吸入牆壁之中⋯
       </template>
       <p>請立即抽取一張新的房間板塊，並移到此處。</p>
     </EventCard>
@@ -627,7 +627,7 @@
     <EventCard class="m-2" series="BHH" name="Webs">
       <template slot="zh-title">蜘蛛網</template>
       <template slot="story">
-        一如往常地，你伸手把蜘蛛網撥開，但這次沒能成功，你被黏住了⋯
+        一如往常，你伸手把蜘蛛網撥開，<br />但這次沒能成功，你被黏住了⋯
       </template>
       <Roll0>請立即進行力量檢定：</Roll0>
       <RollL>
@@ -645,7 +645,7 @@
     <EventCard class="m-2" series="BHH" name="What the…?">
       <template slot="zh-title">咦？</template>
       <template slot="story">
-        當你回頭轉向經過的房間時，卻什麼也沒看到，只留下一層迷霧⋯
+        當你回頭轉向經過的房間時，<br />卻什麼也沒看到，<br />只留下一層迷霧⋯
       </template>
       <p>請將你身處的房間板塊移至同一樓層中，任一尚未探索的門後，房間上的所有標記皆一起移動。</p>
     </EventCard>
@@ -653,7 +653,7 @@
     <EventCard class="m-2" series="BHH" name="WHOOPS!">
       <template slot="zh-title">哎呀！</template>
       <template slot="story">
-        你發現腳下似乎有什麼東西，正要躲開時，卻被牠狠狠擊倒，只聽見一陣咯咯笑聲離你遠去⋯
+        你發現腳下似乎有什麼東西，<br />正要躲開時，卻被牠狠狠擊倒，<br />只聽見一陣咯咯笑聲離你遠去⋯
       </template>
       <p>請將你所有的道具卡（不包含預兆卡）覆蓋於桌面，由你右邊的玩家隨機選擇丟棄其中一張。</p>
     </EventCard>

@@ -14,7 +14,7 @@
         有點生鏽的槍身，看得出來有被好好的使用過，至少他們留下了兩發不錯的子彈。
       </template>
       <p>當你抽到此卡時，放置兩枚<Token name="Item" />在這張卡上。</p>
-      <p>你可以犧牲１個<Token name="Item" />，並使用<Item brief name="Boomstick" />進行速度７攻擊，防禦方使用速度進行防禦，並受到物理傷害。</p>
+      <p>你可以犧牲１個<Token name="Item" />，並使用<Item brief name="Boomstick" />進行速度７攻擊，防禦方亦用速度進行防禦，並受到物理傷害。</p>
       <p>使用<Item brief name="Boomstick" />，你可對任何視線內（透過任何未受阻礙的門可看到）的對手進行攻擊，若攻擊失敗，你不會被反擊。</p>
       <p>當你用盡所有<Token name="Item" />時，棄掉<Item brief name="Boomstick" />。</p>
       <p><Item brief name="Boomstick" />不得用於防禦。</p>
