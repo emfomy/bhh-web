@@ -3,7 +3,7 @@
 
       <OmenCard class="m-2" series="BHH" name="Bite">
         <template slot="story">
-          一聲咆哮，瀰漫著死亡的氣息，接續著痛苦、黑暗，然後消失⋯
+          一聲咆哮，瀰漫著死亡的氣息，<br />接續著痛苦、黑暗，然後消失⋯
         </template>
         <p>當你抽到此卡時，某種東西突然咬上了你！</p>
         <p>你的右方的玩家代替神秘生物，擲４顆骰子對你的攻擊，你以力量進行防禦。</p>
@@ -13,7 +13,7 @@
 
       <OmenCard class="m-2" series="BHH" name="Book">
         <template slot="story">
-          這是一本日記？實驗筆記？遠古手稿？還是一本妄語呢？
+          這是一本日記？實驗筆記？<br />遠古手稿？還是一本妄語呢？
         </template>
         <p>立即獲得２級知識。</p>
         <p>若你失去<Omen brief name="Book" />，立即失去２級知識。</p>
@@ -36,7 +36,7 @@
 
       <OmenCard class="m-2" series="BHH" name="Dog" usage="companion">
         <template slot="story">
-          看似友善的癩皮狗⋯至少你希望牠是⋯
+          看似友善的癩皮狗⋯<br />至少你希望牠是⋯
         </template>
         <p>立即獲得１級力量和１級神志。</p>
         <p>若你失去<Omen brief name="Dog" />，立即失去１級力量和１級神志。</p>
@@ -74,7 +74,7 @@
 
       <OmenCard class="m-2" series="BHH" name="Mask">
         <template slot="story">
-          一個可以用來隱藏你意圖的陰沈面具。
+          可以用來隱藏你意圖的陰沈面具。
         </template>
         <Roll0>此後每回合一次，你可進行神志檢定嘗試使用<Omen brief name="Mask" />：</Roll0>
         <RollL>
@@ -89,28 +89,28 @@
 
       <OmenCard class="m-2" series="BHH" name="Medallion">
         <template slot="story">
-          一個刻有五芒星標誌的徽章。
+          刻有五芒星標誌的徽章。
         </template>
         <p>你將不再受到<Room name="Pentagram Chamber" />、<Room name="Crypt" />、<Room name="Graveyard" />的影響。</p>
       </OmenCard>
 
       <OmenCard class="m-2" series="BHH" name="Ring">
         <template slot="story">
-          一個磨損的戒指，上頭有著難以理解的刻記。
+          一個磨損的戒指，<br />上頭有著難以理解的刻記。
         </template>
         <p>當你遇攻擊的對手有神志屬性時，你可以使用<Omen brief name="Ring" />進行神志攻擊，嘗試造成精神傷害，對手亦須以神志進行防禦。</p>
       </OmenCard>
 
       <OmenCard class="m-2" series="BHH" name="Skull">
         <template slot="story">
-          一個破碎且缺牙的骷髏頭。
+          破碎且缺牙的骷髏頭。
         </template>
         當你受到精神傷害時，可將所有的傷害轉為物理傷害，但不可只轉換部分傷害。
       </OmenCard>
 
       <OmenCard class="m-2" series="BHH" name="Spear" usage="weapon">
         <template slot="story">
-          一個充滿能量而震動的武器。
+          充滿能量而震動的武器。
         </template>
         <p>當你使用<Omen brief name="Spear" />進行力量攻擊時，額外多擲２顆骰。</p>
         <p><Omen brief name="Spear" />不得用於防禦。</p>

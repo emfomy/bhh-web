@@ -11,7 +11,7 @@
 
     <ItemCard class="m-2" series="BHH" name="Amulet Of The Ages">
       <template slot="story">
-        鑲嵌著寶石的古代銀器，上頭銘刻著祝福。
+        鑲嵌著寶石的古代銀器，<br />上頭銘刻著祝福。
       </template>
       <p>立即獲得１級全屬性。</p>
       <p>若你失去<Item brief name="Amulet Of The Ages" />，立即失去３級全屬性。</p>
@@ -27,7 +27,7 @@
 
     <ItemCard class="m-2" series="BHH" name="Armor">
       <template slot="story">
-        雖然只是文藝復興博覽會的道具，但仍然是金屬製。
+        雖然只是文藝復興博覽會的道具，<br />但仍然是金屬製。
       </template>
       <p>每當你受到任何物理傷害時，由於<Item brief name="Armor" />的保護，減少１點物理傷害。</p>
       <p><Item brief name="Armor" />不會被搶奪。</p>
@@ -59,7 +59,7 @@
 
     <ItemCard class="m-2" series="BHH" name="Blood Dagger" usage="weapon">
       <template slot="story">
-        一把齷齪的武器，針管自劍柄延伸出，深深地插入你的靜脈中⋯
+        一把齷齪的武器，<br />針管自劍柄延伸出，<br />深深地插入你的靜脈中⋯
       </template>
       <p>當你使用<Item brief name="Blood Dagger" />進行力量攻擊時，額外多擲３顆骰（至多８顆），並失去１級速度。</p>
       <p><Item brief name="Axe" />不得用於防禦。</p>
@@ -70,7 +70,7 @@
 
     <ItemCard class="m-2" series="BHH" name="Bottle">
       <template slot="story">
-        不透明的藥罐，流動著黑色的液體。
+        不透明的藥罐，<br />流動著黑色的液體。
       </template>
       <Roll0>在作祟發生後，每回合一次，你可擲３顆骰嘗試喝下黑色液體：</Roll0>
       <RollL>
@@ -94,7 +94,7 @@
 
     <ItemCard class="m-2" series="BHH" name="Candle">
       <template slot="story">
-        它能夠驅散陰影⋯至少你希望它真能如此⋯
+        能夠驅散陰影⋯<br />至少你希望它真能如此⋯
       </template>
       <p>當你因事件而進行檢定時，多擲１顆骰（至多８顆）。</p>
       <p>若你同時持有<Item name="Bell" />、<Omen name="Book" />、<Item name="Candle" />時，立即獲得２級全屬性。但若你失去任何一樣，立即失去２級全屬性。</p>
@@ -148,14 +148,14 @@
 
     <ItemCard class="m-2" series="BHH" name="Idol">
       <template slot="story">
-        祂選擇你或許是為了某些目的⋯像是活體獻祭⋯
+        祂選擇你或許是為了某些目的⋯<br />像是活體獻祭⋯
       </template>
       <p>每回合一次，當你因進行檢定、戰鬥、或事件擲骰前，可摩擦神像並犧牲１級神志，額外多擲２顆骰（至多８顆）。</p>
     </ItemCard>
 
     <ItemCard class="m-2" series="BHH" name="Lucky Stone">
       <template slot="story">
-        光滑、看似平凡無奇的石頭，你感覺到它似乎可以為你帶來好運。
+        光滑、看似平凡無奇的石頭，<br />你感覺到它似乎可為你帶來好運。
       </template>
       <p>在你的任何擲骰後，可摩擦<Item brief name="Lucky Stone" />，並重擲任意數量的骰子。</p>
       <p>使用後將<Item brief name="Lucky Stone" />丟棄。</p>
@@ -163,7 +163,7 @@
 
     <ItemCard class="m-2" series="BHH" name="Medical Kit">
       <template slot="story">
-        一位醫生的急救包，某些重要資源已被用盡。
+        一名醫生的急救包，<br />某些重要資源已被用盡。
       </template>
       <Roll0>每回合一次，你可進行知識檢定嘗試使用<Item brief name="Medical Kit" />治療自己或同房的探險者：</Roll0>
       <RollL>
@@ -181,7 +181,7 @@
 
     <ItemCard class="m-2" series="BHH" name="Music Box">
       <template slot="story">
-        手製的舊式音樂盒，在你腦海中繚繞一陣幽森的旋律。
+        手製的舊式音樂盒，<br />在你腦海中繚繞一陣幽森的旋律。
       </template>
       <p>每回合一次，你可開啟或關閉<Item brief name="Music Box" />。</p>
       <p>當<Item brief name="Music Box" />被開啟後，房內所有的探險者皆須進行神志檢定達 4+，若失敗，則被旋律催眠，並立即結束回合。</p>
@@ -190,7 +190,7 @@
 
     <ItemCard class="m-2" series="BHH" name="Pickpocket’s Glove">
       <template slot="story">
-        幫助自己從未如此輕鬆。
+        幫助自己從未如此容易。
       </template>
       <p>當你與其他探險者處於同一房間時，你可以使用<Item brief name="Pickpocket’s Glove" />，任意偷取該探險者所持有的其中一項物品。</p>
       <p>使用後將<Item brief name="Pickpocket’s Glove" />丟棄。</p>
@@ -211,14 +211,14 @@
 
     <ItemCard class="m-2" series="BHH" name="Rabbit’s Foot">
       <template slot="story">
-        帶來幸運的左後腳，但那隻兔子就不怎麼幸運了⋯
+        帶來幸運的左後腳，<br />但那隻兔子就不怎麼幸運了⋯
       </template>
       <p>每回合一次，你可重擲一顆骰子。你必須使用重擲後的結果。</p>
     </ItemCard>
 
     <ItemCard class="m-2" series="BHH" name="Revolver" usage="weapon">
       <template slot="story">
-        外型老舊，但看似極具殺傷力的武器。
+        外型老舊，<br />但看似極具殺傷力的武器。
       </template>
       <p>你可以使用<Item brief name="Revolver" />進行速度攻擊，防禦方亦用速度進行防禦，並受到物理傷害。</p>
       <p>當你使用<Item brief name="Revolver" />進行速度攻擊，額外多擲１顆骰（至多８顆）。</p>
@@ -229,7 +229,7 @@
 
     <ItemCard class="m-2" series="BHH" name="Sacrificial Dagger" usage="weapon">
       <template slot="story">
-        彎曲的鐵製短劍，有著神秘的符號與斑斑的血跡。
+        彎曲的鐵製短劍，<br />有著神秘的符號與斑斑的血跡。
       </template>
       <Roll0>當你使用<Item brief name="Sacrificial Dagger" />進行力量攻擊時，額外多擲２顆骰（至多８顆），但請先進行知識檢定判定副作用：</Roll0>
       <RollL>

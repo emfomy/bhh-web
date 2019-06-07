@@ -6,7 +6,7 @@
     <slot slot="body" />
     <template slot="footer">
       <b-img class="OmenIcon" center src="@/assets/images/omen_icon.png" />
-      <p class="mt-3">請立即進行作祟檢定。</p>
+      <p class="mt-2 mb-0">請立即進行作祟檢定。</p>
     </template>
   </Card>
 </template>

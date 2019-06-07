@@ -6,7 +6,7 @@
     <slot slot="body" />
     <template slot="footer">
       <b-img class="EventIcon" center src="@/assets/images/event_icon.png" />
-      <!-- <p class="invisible mt-3">。</p> -->
+      <p class="invisible mt-2 mb-0"></p>
     </template>
   </Card>
 </template>
