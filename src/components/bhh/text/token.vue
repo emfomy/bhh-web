@@ -12,9 +12,9 @@ const zhShape = {
 };
 
 export default {
-  props: [
-    'name',
-  ],
+  props: {
+    name: String,
+  },
   computed: {
     zhName() {
       console.assert(_(this.$share.tokens).has(this.name));

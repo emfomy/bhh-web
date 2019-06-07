@@ -6,9 +6,9 @@
 import _ from 'lodash';
 
 export default {
-  props: [
-    'name',
-  ],
+  props: {
+    name: String,
+  },
   computed: {
     zhName() {
       console.assert(_(this.$share.rooms).has(this.name));

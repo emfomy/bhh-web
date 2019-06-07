@@ -2,7 +2,7 @@
   <div class="Card position-relative rounded bg-milk-light">
     <div class="CardBody position-absolute w-100 h-100">
       <h3 class="text-center mb-0"><slot name="zh-title">???</slot></h3>
-      <h6 class="text-center text-milk-dark" style="text-transform: uppercase;"><slot name="en-title">???</slot></h6>
+      <h6 class="text-center text-milk-dark text-uppercase"><slot name="en-title">???</slot></h6>
       <p class="text-center font-story-card mb-0"><slot name="story">???</slot></p>
       <hr class="my-2" />
       <div class="CardRule">
@@ -33,10 +33,10 @@ const seriesImg = {
 
 export default {
   name: 'Card',
-  props: [
-    'series',
-    'usage',
-  ],
+  props: {
+    series: String,
+    usage: String,
+  },
   computed: {
     zhType() {
       if (this.usage) {

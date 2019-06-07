@@ -315,7 +315,7 @@
     <EventCard class="m-2" series="BHH" name="Mists From the Walls">
       <template slot="zh-title">壁上霧靄</template>
       <template slot="story">
-        霧氣從牆上湧現，煙霧之中浮現了滿滿的人臉⋯有些看來甚至不像人類⋯⋯
+        霧氣從牆上湧現，煙霧之中浮現了滿滿的人臉⋯有些看來甚至不像人類⋯
       </template>
       <Roll0>所有位於地下室的玩家，立即進行神志檢定：</Roll0>
       <RollL>

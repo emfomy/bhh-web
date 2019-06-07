@@ -7,11 +7,11 @@ $milk-dark: darken($milk, 10%);
 }
 
 .text-milk-light {
-  color: lighten($milk-light, 20%) !important;
+  color: lighten($milk, 30%) !important;
 }
 
 .text-milk-dark {
-  color: darken($milk-dark, 20%) !important;
+  color: darken($milk, 30%) !important;
 }
 
 .bg-milk {

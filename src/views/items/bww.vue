@@ -95,7 +95,6 @@
       <p>若你身為／成為叛徒，將此卡放回道具牌堆洗勻。</p>
     </ItemCard>
 
-
   </b-card-text>
 </template>
 
