@@ -121,8 +121,8 @@
         <template slot="story">
           刻印著招喚死亡的文字與數字。
         </template>
-        <p>此後每回合移動之前，你可以使用<Omen bried name="Spirit Board" />窺視房間牌堆頂端的板塊。</p>
-        <p>在作祟發生之後，每當你使用<Omen bried name="Spirit Board" />時，叛徒可遣任意數量的怪物向你移動１格。若你身為叛徒，則忽略此效果。若沒有叛徒，則所有怪物皆須向你前進１格。</p>
+        <p>此後每回合移動之前，你可以使用<Omen brief name="Spirit Board" />窺視房間牌堆頂端的板塊。</p>
+        <p>在作祟發生之後，每當你使用<Omen brief name="Spirit Board" />時，叛徒可遣任意數量的怪物向你移動１格。若你身為叛徒，則忽略此效果。若沒有叛徒，則所有怪物皆須向你前進１格。</p>
       </OmenCard>
 
   </b-card-text>
