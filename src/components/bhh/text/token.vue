@@ -1,5 +1,5 @@
 <template>
-  <span>〈{{ zhName }} {{ name }}〉{{zhShape}}標記</span>
+  <span>〈{{ zhName }} {{ name }}〉<template v-if="!noShape">{{zhShape}}標記</template></span>
 </template>
 
 <script>
@@ -14,15 +14,16 @@ const zhShape = {
 export default {
   props: {
     name: String,
+    noShape: { type: Boolean, default: false },
   },
   computed: {
     zhName() {
       console.assert(_(this.$share.tokens).has(this.name));
-      return _.defaultTo(this.$share.tokens[this.name].name, '????????');
+      return _.get(this.$share.tokens, [this.name, 'name'], '????????');
     },
     zhShape() {
       console.assert(_(this.$share.tokens).has(this.name));
-      return _.defaultTo(zhShape[this.$share.tokens[this.name].shape], '????????');
+      return _.defaultTo(zhShape[_.get(this.$share.tokens, [this.name, 'shape'])], '????????');
     },
   },
 };

@@ -3,7 +3,7 @@
 
     <ItemCard class="m-2" series="BWW" name="Blueprint">
       <template slot="story">
-        這間在宅邸的老舊地圖。
+        這間在屋子的老舊地圖。
       </template>
       <p>當你執行移動相關的檢定時，例如進入、離開、或穿越房間時，你可以選擇檢定的結果。</p>
       <p>你可以在有升降機圖示的房間之間傳送移動。</p>
@@ -42,7 +42,7 @@
       <template slot="story">
         咈咈、寶貝、咈咈。
       </template>
-      <p>當你使用<Item brief name="Chainsaw" />進行力量攻擊或防禦時，額外多擲１顆骰。</p>
+      <p>當你使用<Item brief name="Chainsaw" />進行力量攻擊或防禦時，多擲１顆骰。</p>
       <p>你不可同時使用多樣武器攻擊。</p>
     </ItemCard>
 
@@ -58,7 +58,7 @@
         由雜亂線圈與玻璃儀器所組成，<br />用來測量這世上未知的東西。
       </template>
       <p>當你回合結束時，有任何對手與你處在同一房間之中，你提升１級知識。</p>
-      <p>當你攻擊時，可棄掉此卡，額外多擲３顆骰，但此次攻擊只能用於偷取物品。</p>
+      <p>當你攻擊時，可棄掉此卡，多擲３顆骰，但此次攻擊只能用於偷取物品。</p>
     </ItemCard>
 
     <ItemCard class="m-2" series="BWW" name="Effigy">

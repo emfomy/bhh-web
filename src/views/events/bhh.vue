@@ -4,7 +4,7 @@
     <EventCard class="m-2" series="BHH" name="A Moment of Hope">
       <template slot="zh-title">希望時刻</template>
       <template slot="story">
-        房間湧現出不可思議的正面能量，<br />似乎有什麼正努力對抗著<br />這宅邸裡的邪惡勢力。
+        房間湧現出不可思議的正面能量，<br />似乎有什麼正努力對抗著<br />這屋子裡的邪惡勢力。
       </template>
       <p>放置一枚<Token name="Blessing" />在此房。</p>
       <p>此後，在此房內進行的任何檢定，皆多擲１顆骰（至多８顆）。</p>
@@ -139,6 +139,7 @@
       </template>
       <p>放置一枚<Token name="Drip" />在此房。</p>
       <p>此後，在此房間進行的任何檢定，皆少擲１顆骰子（至少１顆）。</p>
+      <p>戰鬥不算檢定。</p>
     </EventCard>
 
     <EventCard class="m-2" series="BHH" name="Footsteps">
@@ -146,7 +147,7 @@
       <template slot="story">
         地板沉緩地發出嘎軋的聲響，<br />塵土向上飛揚，骯髒的地板上<br />浮現了一步步的腳印。<br />而就在它們快碰到你時，<br />卻消失了⋯
       </template>
-      <Roll0>請立即擲１顆骰（如果你位於<Room name="Crypt" />，額外多擲１顆）：</Roll0>
+      <Roll0>請立即擲１顆骰（如果你位於<Room name="Crypt" />，多擲１顆）：</Roll0>
       <RollL>
         <RollT>4</RollT>
           <RollD>你和離你最近的探險者皆獲得１級力量。</RollD>
@@ -317,14 +318,14 @@
       <template slot="story">
         霧氣從牆上湧現，<br />煙霧之中浮現了滿滿的人臉⋯<br />有些看來甚至不像人類⋯
       </template>
-      <Roll0>所有位於地下室的玩家，立即進行神志檢定：</Roll0>
+      <Roll0>所有位於地下的玩家，立即進行神志檢定：</Roll0>
       <RollL>
         <RollT>4+</RollT>
           <RollD>臉孔不過是光影的把戲罷了。</RollD>
         <RollT>1-3</RollT>
-          <RollD>受到１顆骰的物理傷害。若你位於有事件符號的房間中，額外多擲１顆骰。</RollD>
+          <RollD>受到１顆骰的物理傷害。若你位於有事件符號的房間中，多擲１顆骰。</RollD>
         <RollT>0</RollT>
-          <RollD>受到１顆骰的物理傷害。若你位於有事件符號的房間中，額外多擲２顆骰。</RollD>
+          <RollD>受到１顆骰的物理傷害。若你位於有事件符號的房間中，多擲２顆骰。</RollD>
       </RollL>
     </EventCard>
 
@@ -333,14 +334,14 @@
       <template slot="story">
         你腳下的地板，忽然滑落並鬆開⋯
       </template>
-      <p>若你位於地下室，則由下一位不在地下室玩家觸發此效果。</p>
+      <p>若你位於地下，則由下一位不在地下玩家觸發此效果。</p>
       <p>放置一枚<Token name="Slide" />在此房。</p>
       <Roll0>請立即進行力量檢定嘗試控制滑道：</Roll0>
       <RollL>
         <RollT>5+</RollT>
           <RollD>你成功控制住滑道。移至低一樓層的任意一間房間中。</RollD>
         <RollT>0-4</RollT>
-          <RollD>你失控了！抽取一張地下室的房間板塊<!-- （若已無未探索的地下室房間，則任選一間） -->，跌落至該處，並受到１顆骰的物理傷害。若這是你不是的回合，則無須為新房間抽取事件／道具／預兆卡。</RollD>
+          <RollD>你失控了！抽取一張地下的房間板塊<!-- （若已無未探索的地下房間，則任選一間） -->，跌落至該處，並受到１顆骰的物理傷害。若這是你不是的回合，則無須為新房間抽取事件／道具／預兆卡。</RollD>
       </RollL>
       <p>此後，任何探險者皆可透過檢定嘗試使用滑道，而不須花費行動步數。</p>
     </EventCard>
@@ -353,7 +354,7 @@
       <Roll0>請立即進行知識檢定：</Roll0>
       <RollL>
         <RollT>5+</RollT>
-          <RollD>你瞭解他們曾經居住於此，你呼喚他們的名字，他們轉身向你走來，輕聲告訴你在這宅邸裡隱藏的黑暗秘密。獲得１級知識。</RollD>
+          <RollD>你瞭解他們曾經居住於此，你呼喚他們的名字，他們轉身向你走來，輕聲告訴你在這屋子裡隱藏的黑暗秘密。獲得１級知識。</RollD>
         <RollT>0-4</RollT>
           <RollD>你恐懼地退，不敢直視。</RollD>
       </RollL>
@@ -439,7 +440,7 @@
         <RollT>2-3</RollT>
           <RollD>任意一間地面房間中。</RollD>
         <RollT>0-1</RollT>
-          <RollD>任意一間地下室房間中。</RollD>
+          <RollD>任意一間地下房間中。</RollD>
       </RollL>
       <p>你現在就可以使用祕密通道，就算你已耗盡行動步數亦可。</p>
       <p>此後，任何探險者皆可以使用通道，並花費１點行動步數。</p>
@@ -478,7 +479,7 @@
       <template slot="story">
         在地底下，任何事物都變得沈默，<br />彷彿連呼吸聲都消失了⋯
       </template>
-      <Roll0>請所有位於地下室的探險者，立即進行神志檢定：</Roll0>
+      <Roll0>請所有位於地下的探險者，立即進行神志檢定：</Roll0>
       <RollL>
         <RollT>4+</RollT>
           <RollD>你冷靜地等待聽覺恢復。</RollD>
@@ -595,7 +596,7 @@
               <RollT>2-3</RollT>
                 <RollD>抽取一張樓上的房間板塊。</RollD>
               <RollT>0-1</RollT>
-                <RollD>抽取一張地下室的房間板塊。</RollD>
+                <RollD>抽取一張地下的房間板塊。</RollD>
             </RollL>
             <p>若已無未探索房間板塊，則直接前往<Room name="Entrance Hall" />。</p>
           </RollD>
@@ -619,7 +620,7 @@
     <EventCard class="m-2" series="BHH" name="The Walls">
       <template slot="zh-title">牆</template>
       <template slot="story">
-        在這間溫暖的房間中，<br />活生生的牆壁有如心跳得正動，<br />你的心臟也跟著這宅邸的節奏拍打。忽然間，你被吸入牆壁之中⋯
+        在這間溫暖的房間中，<br />活生生的牆壁有如心跳得正動，<br />你的心臟也跟著這屋子的節奏拍打。忽然間，你被吸入牆壁之中⋯
       </template>
       <p>請立即抽取一張新的房間板塊，並移到此處。</p>
     </EventCard>

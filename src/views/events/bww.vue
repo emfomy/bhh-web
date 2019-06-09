@@ -59,12 +59,12 @@
     <EventCard class="m-2" series="BWW" name="Ghost in The Machine">
       <template slot="zh-title">鬼入鏡</template>
       <template slot="story">
-        一陣劈哩啪啦的聲響，<br />伴隨著各種駭人的影像，<br />在眼前的電視機內閃爍著。<br />透過白花花的雜訊，<br />你辨識出一個女孩，<br />在這宅邸內某處玩耍。<br />她停下動作並轉頭，<br />向你招手示意加入他的遊戲。<br />正當你還沒回過神來，<br />電視螢幕已陷入一片黑暗⋯
+        一陣劈哩啪啦的聲響，<br />伴隨著各種駭人的影像，<br />在眼前的電視機內閃爍著。<br />透過白花花的雜訊，<br />你辨識出一個女孩，<br />在這屋內某處玩耍。<br />她停下動作並轉頭，<br />向你招手示意加入他的遊戲。<br />正當你還沒回過神來，<br />電視螢幕已陷入一片黑暗⋯
       </template>
       <Roll0>請立即進行神志檢定：</Roll0>
       <RollL>
         <RollT>3+</RollT>
-          <RollD>抽取一張頂樓的房間板塊，放入宅邸內，並移至該處。</RollD>
+          <RollD>抽取一張頂樓的房間板塊，放入屋內，並移至該處。</RollD>
         <RollT>0-2</RollT>
           <RollD>失去１點力量，並保留此卡一回合。到你下一個回合開始前，所有探險者的行動步數降至１格。</RollD>
       </RollL>

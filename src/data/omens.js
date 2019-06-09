@@ -13,4 +13,13 @@ export default {
   Skull: '顱骨',
   Spear: '長矛',
   'Spirit Board': '靈魂版',
+
+  Bloodstone: '血石',
+  Box: '箱子',
+  Cat: '貓',
+  Key: '鑰匙',
+  Letter: '信件',
+  Photograph: '相片',
+  Rope: '繩索',
+  Vial: '小瓶子',
 };

@@ -5,7 +5,7 @@
       <template slot="story">
         一管含奇怪螢光液體的針筒。
       </template>
-      <p>每當你進行任何檢定前，可注入此劑，使你擲出的結果額外增加４點。</p>
+      <p>每當你進行任何檢定前，可注入此劑，使你擲出的結果增加４點。</p>
       <p>使用後將<Item brief name="Adrenaline Shot" />丟棄。</p>
     </ItemCard>
 
@@ -21,7 +21,7 @@
       <template slot="story">
         你手中飄動著一根完美的羽毛。
       </template>
-      <p>當你在進行任何擲骰前，可以使用<Item brief name="Angel Feather" />並指定一個 0-8 的數字，視為擲骰結果。</p>
+      <p>當你進行任何擲骰前，可以使用<Item brief name="Angel Feather" />並指定一個 0-8 的數字，視為擲骰結果。</p>
       <p>使用後將<Item brief name="Angel Feather" />丟棄。</p>
     </ItemCard>
 
@@ -37,7 +37,7 @@
       <template slot="story">
         非常尖銳。
       </template>
-      <p>當你使用<Item brief name="Axe" />進行力量攻擊時，額外多擲１顆骰。</p>
+      <p>當你使用<Item brief name="Axe" />進行力量攻擊時，多擲１顆骰。</p>
       <p><Item brief name="Axe" />不得用於防禦。</p>
       <p>你不可同時使用多樣武器攻擊。</p>
     </ItemCard>
@@ -61,7 +61,7 @@
       <template slot="story">
         一把齷齪的武器，<br />針管自劍柄延伸出，<br />深深地插入你的靜脈中⋯
       </template>
-      <p>當你使用<Item brief name="Blood Dagger" />進行力量攻擊時，額外多擲３顆骰（至多８顆），並失去１級速度。</p>
+      <p>當你使用<Item brief name="Blood Dagger" />進行力量攻擊時，多擲３顆骰（至多８顆），並失去１級速度。</p>
       <p><Item brief name="Axe" />不得用於防禦。</p>
       <p>你不可同時使用多樣武器攻擊。</p>
       <p><Item brief name="Blood Dagger" />不可被棄置、交易。</p>
@@ -150,7 +150,7 @@
       <template slot="story">
         祂選擇你或許是為了某些目的⋯<br />像是活體獻祭⋯
       </template>
-      <p>每回合一次，當你因進行檢定、戰鬥、或事件擲骰前，可摩擦神像並犧牲１級神志，額外多擲２顆骰（至多８顆）。</p>
+      <p>每回合一次，當你進行任何檢定、戰鬥、或事件擲骰前，可摩擦<Item brief name="Idol" />並犧牲１級神志，多擲２顆骰（至多８顆）。</p>
     </ItemCard>
 
     <ItemCard class="m-2" series="BHH" name="Lucky Stone">
@@ -221,7 +221,7 @@
         外型老舊，<br />但看似極具殺傷力的武器。
       </template>
       <p>你可以使用<Item brief name="Revolver" />進行速度攻擊，防禦方亦用速度進行防禦，並受到物理傷害。</p>
-      <p>當你使用<Item brief name="Revolver" />進行速度攻擊，額外多擲１顆骰（至多８顆）。</p>
+      <p>當你使用<Item brief name="Revolver" />進行速度攻擊，多擲１顆骰（至多８顆）。</p>
       <p>使用<Item brief name="Revolver" />，你可對任何視線內（透過任何未受阻礙的門可看到）的對手進行攻擊，若攻擊失敗，你不會被反擊。</p>
       <p><Item brief name="Revolver" />不得用於防禦。</p>
       <p>你不可同時使用多樣武器攻擊。</p>
@@ -231,7 +231,7 @@
       <template slot="story">
         彎曲的鐵製短劍，<br />有著神秘的符號與斑斑的血跡。
       </template>
-      <Roll0>當你使用<Item brief name="Sacrificial Dagger" />進行力量攻擊時，額外多擲２顆骰（至多８顆），但請先進行知識檢定判定副作用：</Roll0>
+      <Roll0>當你使用<Item brief name="Sacrificial Dagger" />進行力量攻擊時，多擲２顆骰（至多８顆），但請先進行知識檢定判定副作用：</Roll0>
       <RollL>
         <RollT>6+</RollT>
           <RollD>沒有副作用。</RollD>

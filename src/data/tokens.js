@@ -6,6 +6,7 @@ const tokenSquare = {
   'Burial Mound': '墳塚',
   Closet: '壁櫥',
   Drip: '滴落',
+  Fountain: '噴泉',
   Plant: '植物',
   Safe: '保險箱',
   'Secret Passage': '秘密通道',
@@ -14,6 +15,9 @@ const tokenSquare = {
   Slide: '滑道',
   Smoke: '煙霧',
   'Wall Switch': '牆機關',
+
+  Lock: '鎖',
+  Obstacle: '障礙物',
 };
 
 const tokenTriangle = {
@@ -25,6 +29,7 @@ const tokenTriangle = {
 
 const tokenPentagon = {
   Item: '物品',
+  'Item Pile': '物品堆',
 };
 
 const token = {};

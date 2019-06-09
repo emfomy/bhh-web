@@ -41,7 +41,7 @@ export default {
     zhType() {
       if (this.usage) {
         console.assert(_(this.$share.usages).has(this.usage));
-        return _.defaultTo(this.$share.usages[this.usage], '????????');
+        return _.get(this.$share.usages, [this.usage], '????????');
       }
       return null;
     },

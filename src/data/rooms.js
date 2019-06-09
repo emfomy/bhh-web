@@ -11,6 +11,7 @@ export default {
   Chapel: '禮拜堂',
   'Charred Room': '焦黑房間',
   Chasm: '峽谷',
+  'Coal Chute': '煤導槽',
   'Collapsed Room': '崩塌房間',
   Conservatory: '溫室',
   'Creaky Hallway': '老朽迴廊',
@@ -42,7 +43,7 @@ export default {
   Tower: '塔樓',
   'Underground Lake': '地下湖',
   'Upper Landing': '樓上平台',
-  Vault: '保險庫',
+  Vault: '金庫',
   'Wine Cellar': '酒窖',
 
   Arsenal: '兵器庫',
@@ -65,4 +66,6 @@ export default {
   'Tree House': '樹屋',
   'Widow’s Walk': '寡婦望',
   'Sewing Room': '裁縫室',
+
+  Landing: '平台',
 };

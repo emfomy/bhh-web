@@ -17,7 +17,7 @@ export default {
   computed: {
     zhName() {
       console.assert(_(this.$share.monsters).has(this.name));
-      return _.defaultTo(this.$share.monsters[this.name], '????????');
+      return _.get(this.$share.monsters, [this.name], '????????');
     },
   },
 };

@@ -16,7 +16,7 @@ export default {
   computed: {
     zhName() {
       console.assert(_(this.$share.omens).has(this.name));
-      return _.defaultTo(this.$share.omens[this.name], '????????');
+      return _.get(this.$share.omens, [this.name], '????????');
     },
   },
 };

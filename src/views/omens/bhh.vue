@@ -76,7 +76,7 @@
         <template slot="story">
           可以用來隱藏你意圖的陰沈面具。
         </template>
-        <Roll0>此後每回合一次，你可進行神志檢定嘗試使用<Omen brief name="Mask" />：</Roll0>
+        <Roll0>每回合一次，你可進行神志檢定嘗試使用<Omen brief name="Mask" />：</Roll0>
         <RollL>
           <RollT>4+</RollT>
             <RollD>你可自由戴上或脫下<Omen brief name="Mask" />。</RollD>
@@ -112,7 +112,7 @@
         <template slot="story">
           充滿能量而震動的武器。
         </template>
-        <p>當你使用<Omen brief name="Spear" />進行力量攻擊時，額外多擲２顆骰。</p>
+        <p>當你使用<Omen brief name="Spear" />進行力量攻擊時，多擲２顆骰。</p>
         <p><Omen brief name="Spear" />不得用於防禦。</p>
         <p>你不可同時使用多樣武器攻擊。</p>
       </OmenCard>

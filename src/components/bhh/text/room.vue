@@ -12,7 +12,7 @@ export default {
   computed: {
     zhName() {
       console.assert(_(this.$share.rooms).has(this.name));
-      return _.defaultTo(this.$share.rooms[this.name], '????????');
+      return _.get(this.$share.rooms, [this.name], '????????');
     },
   },
 };
