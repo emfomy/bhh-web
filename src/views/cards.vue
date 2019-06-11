@@ -13,6 +13,7 @@
       </b-nav>
       <router-view ref="view" />
     </b-card>
+
   </b-container>
 </template>
 
@@ -24,8 +25,15 @@ export default {
     'title',
   ],
   methods: {
-    downloadChild() {
-      return this.$refs.view.$children;
+    download() {
+      const params = [];
+      _(this.$refs.view.$children).forEach((child) => {
+        if (typeof (child.downloadParam) === 'function') {
+          params.push(child.downloadParam());
+        }
+      });
+
+      this.$downloader.applyCards(params, this);
     },
   },
 };

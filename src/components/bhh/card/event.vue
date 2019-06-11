@@ -1,5 +1,5 @@
 <template>
-  <Card ref="body" :series="series">
+  <Card ref="body" type="Event" :name="name" :series="series">
     <slot slot="zh-title" name="zh-title" />
     <slot slot="en-title" name="en-title">{{ name }}</slot>
     <slot slot="story" name="story" />
@@ -25,14 +25,14 @@ export default {
   },
   methods: {
     downloadParam() {
-      return this.$refs.body.downloadParam(`Event - ${this.series} - ${this.name}`);
+      return this.$refs.body.downloadParam();
     },
   },
 };
 </script>
 
 <style scoped lang="scss">
-.Card {
+::v-deep .Card {
   background-image: url('~@/assets/images/event_background.png');
 }
 

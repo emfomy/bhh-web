@@ -8,8 +8,9 @@ import App from './App.vue';
 import router from './include/router';
 import store from './include/store';
 
-import './include/data';
 import './include/components';
+import './include/data';
+import './include/downloader';
 
 Vue.config.productionTip = false;
 

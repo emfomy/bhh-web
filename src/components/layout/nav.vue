@@ -8,6 +8,7 @@
 
         <b-navbar-nav>
           <b-nav-item exact-active-class="active font-weight-bold" to="/">主頁</b-nav-item>
+          <b-nav-item active-class="active font-weight-bold" to="/rules">規則</b-nav-item>
           <b-nav-item active-class="active font-weight-bold" to="/events">事件</b-nav-item>
           <b-nav-item active-class="active font-weight-bold" to="/items">道具</b-nav-item>
           <b-nav-item active-class="active font-weight-bold" to="/omens">預兆</b-nav-item>
@@ -16,7 +17,7 @@
 
         <b-navbar-nav class="ml-auto">
 
-          <b-button small variant="outline-secondary" @click="download">Download</b-button>
+          <b-button size="sm" variant="outline-secondary" @click="download">Download</b-button>
 
         </b-navbar-nav>
 

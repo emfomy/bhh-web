@@ -7,3 +7,22 @@ $enable-shadows: true;
 .card {
   box-shadow: $box-shadow-sm;
 }
+
+p {
+  margin-bottom: map-get($spacers, 2);
+}
+
+li > p {
+  margin-bottom: map-get($spacers, 1);
+}
+
+blockquote {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: map-get($spacers, 3);
+  margin-bottom: map-get($spacers, 3);
+}
+
+ul, ol {
+  padding-left: 2rem;
+}

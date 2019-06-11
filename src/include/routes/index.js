@@ -13,6 +13,9 @@ export default [
     path: '/', component: loadView('home'),
   },
   {
+    path: '/rules', component: loadView('rules'), meta: { title: '規則' },
+  },
+  {
     path: '/events',
     component: loadView('cards'),
     meta: { title: '事件' },

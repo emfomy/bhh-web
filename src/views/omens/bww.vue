@@ -38,7 +38,7 @@
         </template>
         <p>當你要從卡牌或是房間效果上檢定以打開或拿取東西時，可以使用鑰匙並多擲４顆骰（至多８顆）。（像是<Room name="Locked Room" />、<Token no-shape name="Safe" />、<Room name="Vault" />）</p>
         <p>你可以直接進出有<Token name="Lock" />的房間。</p>
-        <p>在你的回合開始時，若你在一扇未上鎖的門旁邊，你可以將１個<Token name="Lock" />放在該門上。</p>
+        <p>在你的回合開始時，若你在一扇未上鎖的門旁邊，你可以將１枚<Token name="Lock" />放在該門上。</p>
       </OmenCard>
 
       <OmenCard class="m-2" series="BWW" name="Letter">

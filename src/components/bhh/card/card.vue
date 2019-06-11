@@ -1,21 +1,24 @@
 <template>
-  <div class="Card position-relative rounded bg-milk-light">
-    <div class="CardBody position-absolute w-100 h-100">
-      <h3 class="text-center mb-0"><slot name="zh-title">???</slot></h3>
-      <h6 class="text-center text-milk-dark text-uppercase"><slot name="en-title">???</slot></h6>
-      <p class="text-center font-story-card mb-0"><slot name="story">???</slot></p>
-      <hr class="my-2" />
-      <div class="CardRule">
-        <slot name="body" />
+  <div>
+    <b-button size="sm" variant="outline-secondary" class="mb-1" @click="download">Download</b-button>
+    <div ref="card" class="Card position-relative rounded bg-milk-light">
+      <div class="CardBody position-absolute w-100 h-100">
+        <h3 class="text-center mb-0"><slot name="zh-title">???</slot></h3>
+        <h6 class="text-center text-milk-dark text-uppercase"><slot name="en-title">???</slot></h6>
+        <p class="text-center font-story-card mb-0"><slot name="story">???</slot></p>
+        <hr class="my-2" />
+        <div class="CardRule">
+          <slot name="body" />
+        </div>
       </div>
-    </div>
 
-    <h6 v-if="usage" class="CardType position-absolute">{{ zhType }}</h6>
+      <h6 v-if="usage" class="CardType position-absolute">{{ zhType }}</h6>
 
-    <b-img class="CardSeries position-absolute" v-bind="seriesProps" />
+      <b-img class="CardSeries position-absolute" v-bind="seriesProps" />
 
-    <div class="CardFooter position-absolute w-100">
-      <slot name="footer" />
+      <div class="CardFooter position-absolute w-100">
+        <slot name="footer" />
+      </div>
     </div>
   </div>
 </template>
@@ -34,6 +37,8 @@ const seriesImg = {
 export default {
   name: 'Card',
   props: {
+    type: String,
+    name: String,
     series: String,
     usage: String,
   },
@@ -54,13 +59,18 @@ export default {
     },
   },
   methods: {
-    downloadParam(name) {
+    download() {
+      this.$downloader.applyCards([this.downloadParam()], this);
+    },
+    downloadParam() {
+      const el = this.$refs.card;
+      const name = `${this.type} - ${this.series} - ${this.name}`;
       return {
-        el: this.$el,
+        el,
         name,
         scale: 3,
-        width: this.$el.offsetWidth,
-        height: this.$el.offsetHeight,
+        width: el.offsetWidth,
+        height: el.offsetHeight,
       };
     },
   },
@@ -82,10 +92,6 @@ export default {
 
   background-size: 100% 100%;
   background-repeat: no-repeat;
-
-  ::v-deep p {
-    margin-bottom: map-get($spacers, 2);
-  }
 }
 
 .CardBody {

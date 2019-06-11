@@ -1,5 +1,5 @@
 <template>
-  <Card ref="body" :series="series" :usage="usage">
+  <Card ref="body" type="Item" :name="name" :series="series" :usage="usage">
     <template slot="zh-title">{{ zhName }}</template>
     <template slot="en-title">{{ name }}</template>
     <slot slot="story" name="story" />
@@ -34,14 +34,14 @@ export default {
   },
   methods: {
     downloadParam() {
-      return this.$refs.body.downloadParam(`Item - ${this.series} - ${this.name}`);
+      return this.$refs.body.downloadParam();
     },
   },
 };
 </script>
 
 <style scoped lang="scss">
-.Card {
+::v-deep .Card {
   background-image: url('~@/assets/images/item_background.png');
 }
 
