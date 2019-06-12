@@ -16,6 +16,10 @@ li > p {
   margin-bottom: map-get($spacers, 1);
 }
 
+section {
+  margin-bottom: map-get($spacers, 3);
+}
+
 blockquote {
   padding-left: 2rem;
   padding-right: 2rem;

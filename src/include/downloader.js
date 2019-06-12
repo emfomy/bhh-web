@@ -18,9 +18,7 @@ const downloader = {
   },
 
   applyCards(params, vueObj) {
-    const tasks = _(params).map((param) => {
-       return (() => this.downloadCard(param, vueObj));
-    });
+    const tasks = _(params).map(param => (() => this.downloadCard(param, vueObj)));
     this.apply(tasks);
   },
 
@@ -53,6 +51,6 @@ const downloader = {
         saveAs(dataUrl, fileName);
       });
   },
-}
+};
 
 Vue.prototype.$downloader = downloader;

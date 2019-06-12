@@ -6,63 +6,32 @@
       <p></p>
     </header>
 
-    <b-card no-body class="mb-3">
-      <b-tabs card align="center">
-
-        <b-tab title="介紹" class="pb-0" active>
-
-          <section>
-            <h4>遊戲介紹</h4>
-            <p>在山中小屋中，每個玩家選擇一個〈探險者 Explorer〉來探索這個令人毛骨悚然的老舊房屋。當你探索這個房屋，你會發現新的房間。每次你進到一間新的房間，你將可能發現些什麼⋯或是有什麼會發現你。影響遊戲的進行，取決於探險者對於房屋中的各個驚喜的反應（無論好壞）。每次遊玩這個遊戲，房屋皆會有所不同。</p>
-            <p>在遊戲中的某個隨機時刻，其中一個探險者將會觸發一個劇情——稱為〈作祟  Haunt〉。當作祟被揭露時，其中一名探險者將成為〈叛徒 Traitor〉，全力對抗他／她原來的夥伴。而其餘的探險者將成為〈英雄 Hero〉，為了自己的生存而奮鬥。從此刻起，遊戲變成了叛徒與英雄間的戰鬥——通常至死方休。</p>
-            <p>這款遊戲有 50 個作祟劇本，每個皆有不同的故事。</p>
-          </section>
-
-          <section>
-            <h4>遊戲目標</h4>
-            <p>探索這棟房屋，並努力使你的探險者更加強大，直到作祟發生。在那之後，無論你是叛徒還是英雄，你的目標皆是完成你那一側的勝利條件。</p>
-          </section>
-
-          <section>
-            <h4>初始設置</h4>
-            <ul>
-              <li><p><b>把〈叛徒手冊 Traitor’s Tome〉和〈生存指南 Secrets of Survival〉擺到一邊。</b>，在作祟發生後，你才會需要他們。</p></li>
-              <li><p><b>每位玩家選擇一張角色卡。</b>卡片兩面各有一個角色，選擇其中一面。</p></li>
-              <li><p><b>在角色卡片四邊放上塑膠指標夾。</b>每個皆須對其該角色各屬性的綠色起始數值位置。</p></li>
-              <li><p><b>洗牌。</b>將所有事件卡面朝下洗勻，並放置在一個大家都拿得到的地方。對道具卡、預兆卡也做同樣的事情。</p></li>
-              <li><p>找到<b><Room name="Basement Landing" />、<Room name="Entrance Hall" />／<Room name="Foyer" />／<Room name="Grand Staircase" />、<Room name="Upper Landing" /></b>將所有事件卡面朝下洗勻，並放置在一個大家都拿得到的地方。對道具卡、預兆卡也做同樣的事情。</p></li>
-              <li><p><b>將其餘的房間板塊面朝下洗勻，</b>無需在意背面的圖示。</p></li>
-              <li><p><b>每位玩家將其探險者人物放置到<Room name="Entrance Hall" />，</b>探險者人物與角色卡的顏色相同。</p></li>
-              <li><p><b>將骰子堆在一起，</b>並放置在一個大家都拿得到的地方。</p></li>
-              <li><p><b>決定起始玩家。</b>角色卡上有寫該角色的生日，離生日最近的探險者為起始玩家，回合依順時針進行。</p></li>
-            </ul>
-          </section>
-
-        </b-tab>
-
-        <b-tab title="遊戲規則" class="pb-0" active>
-
-          <section>
-            <p>遊戲從起始玩家開始，並向左順時針進行，探險者輪流進行回合並探索屋子。</p>
-            <p>為了簡單起見，所有規則中的「你」皆指正在進行動作或受到卡牌、房屋板塊規則影響的角色——探險者（包含英雄與叛徒）以及怪物。</p>
-          </section>
-
-          <section>
-            <h4>屬性／檢定</h4>
-            <p>每位探險者皆有四個〈屬性 Trait〉，由角色卡四邊的數字所表示：〈力量 Might〉、〈速度 Speed〉、〈知識 Knowledge〉、〈神志 Sanity〉。力量與速度為〈物理 Physical〉屬性，而知識與神志為〈精神 Mental〉屬性。</p>
-            <p>許多卡片、房間板塊、以及遊戲效果會影響你的屬性。</p>
-          </section>
-
-        </b-tab>
-
-      </b-tabs>
+    <b-card header-class="px-0 pb-0 border-bottom-0">
+      <b-nav tabs align="center" slot="header">
+        <b-nav-item
+          v-for="(item, key) in routes.slice(1)"
+          :key="key"
+          active-class="active"
+          :to="`/rules/${item.path}`"
+        >
+          {{ item.meta.title }}
+        </b-nav-item>
+      </b-nav>
+      <router-view ref="view" />
     </b-card>
 
   </b-container>
 </template>
 
 <script>
+import routes from '@/include/routes/rules';
+
 export default {
   name: 'Rules',
+  data() {
+    return {
+      routes,
+    };
+  },
 };
 </script>

@@ -6,7 +6,7 @@
       <p></p>
     </header>
 
-    <b-card no-body class="mb-3">
+    <b-card no-body>
       <b-tabs card align="center">
         <b-tab title="列表" active>
           <b-card-text class="d-flex flex-wrap justify-content-around">

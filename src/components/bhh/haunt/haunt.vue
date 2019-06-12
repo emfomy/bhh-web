@@ -7,12 +7,12 @@
       <p></p>
     </header>
 
-    <b-card no-body class="mb-3">
+    <b-card no-body>
       <b-tabs card align="center">
-        <b-tab title="生存指南" active>
+        <b-tab class="pb-1" title="生存指南" active>
           <b-card-text><slot name="hero" /></b-card-text>
         </b-tab>
-        <b-tab title="叛徒手冊">
+        <b-tab class="pb-1" title="叛徒手冊">
           <b-card-text><slot name="traitor" /></b-card-text>
         </b-tab>
       </b-tabs>

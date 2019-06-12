@@ -1,5 +1,6 @@
 import loadView from './_loader';
 
+import rulesRoutes from './rules';
 import hauntsRoutes from './haunts';
 
 export default [
@@ -13,7 +14,10 @@ export default [
     path: '/', component: loadView('home'),
   },
   {
-    path: '/rules', component: loadView('rules'), meta: { title: '規則' },
+    path: '/rules',
+    component: loadView('rules'),
+    meta: { title: '規則' },
+    children: rulesRoutes,
   },
   {
     path: '/events',

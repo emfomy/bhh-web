@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import _ from 'lodash';
+
 import Layout from '@/components/layout/layout.vue';
 
 export default {
