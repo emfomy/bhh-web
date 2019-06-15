@@ -69,5 +69,6 @@ export default {
   'Widow’s Walk': '寡婦望',
   'Sewing Room': '裁縫室',
 
+  'Front Door': '前門',
   Landing: '平台',
 };

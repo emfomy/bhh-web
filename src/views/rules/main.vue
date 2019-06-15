@@ -1,8 +1,9 @@
 <template>
   <b-card-text>
     <b-card no-body>
-      <b-tabs card align="center">
-        <b-tab title="主要規則" class="pb-1" active>
+      <b-tabs card align="center" v-model="tabIndex">
+
+        <b-tab title="主要規則" class="pb-1">
 
           <section>
             <p>遊戲從起始玩家開始，並向左順時針進行，探險者輪流進行回合並探索屋子。</p>
@@ -24,22 +25,68 @@
             <p>在你的回合當中，你可以以任意順序進行以下動作（任意次數）：</p>
             <ul class="mb-2">
               <li><b>移動</b>，</li>
-              <li><b>探索</b>新房間，</li>
-              <li><b>使用</b>物品（道具卡與預兆卡），</li>
+              <li><b>探索新房間</b>，</li>
+              <li><b>使用物品</b>（道具卡與預兆卡），</li>
               <li><b>執行擲骰</b>，</li>
               <li><b>發動攻擊</b>（一回合一次，僅能在作祟發生後執行）。</li>
             </ul>
-            <p>在作祟發生前，若你抽到預兆卡，你必須回合結束時進行<b>〈作祟檢定 Haunt Roll〉</b>（詳見<b-link to="/rules/haunt">作祟</b-link>章節）。作祟發生後，遊戲將會有些許的改變（詳見<b-link to="/rules/haunt">作祟</b-link>章節）。</p>
+            <p>在作祟發生前，若你抽到預兆卡，你必須回合結束時進行<b>〈作祟檢定 Haunt Roll〉</b>（詳見「<b-link to="/rules/haunt">作祟</b-link>」章節）。作祟發生後，遊戲將會有些許的改變（詳見「<b-link to="/rules/haunt">作祟</b-link>」章節）。</p>
           </section>
 
         </b-tab>
 
-        <b-tab title="移動" class="pb-1" active>
+        <b-tab title="移動" class="pb-1">
 
           <section>
             <h4>移動</h4>
-            <p>在你的回合中，你可以移動至多等於探險者的<b>速度</b>的距離。在移動中，你進行任何行動（如使用物品或發動攻擊）。然而，</p>
+            <p>在你的回合中，你可以移動至多等於探險者的<b>速度</b>的距離。在移動中，你進行任何行動（如使用物品或發動攻擊）。然而，當你因為任何理由而抽牌後，你本回合必須停止移動（但仍然可以繼續進行回合）。</p>
           </section>
+
+        </b-tab>
+
+        <b-tab title="探索新房間" class="pb-1">
+
+          <section>
+            <h4>探索新房間</h4>
+            <p>當你的探險者穿越一扇後面沒有房間的門時，檢查房間板塊堆最頂上的房間。如果它符合你在的樓層（<b>〈地面 Ground〉、〈地下 Basement〉、〈樓上 Upper〉</b>），將它翻開並連接在門後，然後移動至房間內，並探索房間。</p>
+            <p>放置時必須盡量合理化，門口必須對著門口，而如果無法對應所有的門的話，則造成了一些「假象」，例如被鎖死的門或是被釘死的窗戶。（這對於一間作祟的房屋而言，並不是什麼奇怪的事。）你不可以穿越鎖死的門，釘死的窗也不被算盡窗戶裡面（除非作祟劇情中特別規定）。</p>
+            <p>如果房間板塊頂的房間不符合你在的樓層，將它維持面向下的狀態放至棄牌堆。重複檢查房間板塊頂的房間直到找到符合的房間為止。</p>
+            <p>你可以穿越門並移動到相鄰的房間。所有門都是開著的，唯一的例外是<Room name="Front Door" />，這扇門永遠都是鎖著的。你無法離開這個幢房屋或使用前門（除非作祟劇情中特別規定）。所有室外的房間（如<Room name="Patio" />）亦屬於房屋的一部分。</p>
+            <p>樓層間透過樓梯相連。<Room name="Grand Staircase" />永遠都連到<Room name="Upper Landing" />；<Room name="Stairs from Basement" />永遠都連到<Room name="Foyer" />的秘門，但這扇秘門在<Room name="Stairs from Basement" />被探索前皆不可使用。</p>
+            <p>有些房間有特殊符號，代表預兆卡、物品卡、事件卡（詳見「<b-link @click="tabIndex=3;">抽牌</b-link>」章節）。有些房間也會有文字敘述，這些文字會在探險者進入或離開房間時發動。如果房間同時有文字與符號，先為特殊符號抽牌，再執行文字敘述的內容。</p>
+            <p>有些房間會影響移動，另外許多房間有特別的規則（詳見以下「特殊房間」章節）。</p>
+          </section>
+
+              <section>
+                <h6>我可以透過擺放新房間封鎖一個樓層嗎？</h6>
+                <p>你無法用此方法封鎖樓層，也就是說，你無法使一個樓層沒有任何未探索的門。如果所有合理的擺放皆會封鎖該樓層，棄掉該房間板塊並抽取新的直到一間不會封鎖樓層的房間為止。如果所有剩餘的房間皆會封鎖該樓層，則玩家可在最少改動下改變其他房間 的放置（例如改變方向、移往隔壁或交換位置）。</p>
+                <p>如果<Room name="Mystic Elevator" />的移動也可能會封鎖樓層。如果<Room name="Mystic Elevator" />的擲骰會導致樓層被封鎖，則電梯不會移動（就算之後可以移開電梯也不行）。</p>
+              </section>
+
+              <section>
+                <h6>房間板塊堆用完了怎麼辦？</h6>
+                <p>如果你用完了房間板塊堆，將棄牌堆洗勻，並用這些牌當作新的房間板塊堆。如果你用光了一層樓的所有房間板塊，則無法繼續在該層樓探索新房間——你已經找到所有房間了。</p>
+              </section>
+
+            <section>
+              <h5>特殊房間</h5>
+            </section>
+
+        </b-tab>
+
+        <b-tab title="抽牌" class="pb-1">
+
+        </b-tab>
+
+        <b-tab title="使用道具" class="pb-1">
+
+        </b-tab>
+
+        <b-tab title="擲骰判定" class="pb-1">
+
+        </b-tab>
+
+        <b-tab title="發動攻擊" class="pb-1">
 
         </b-tab>
 
@@ -49,5 +96,13 @@
 </template>
 
 <script>
-export default {};
+
+export default {
+  data() {
+    return {
+      // tabIndex: 0,
+      tabIndex: 2,
+    };
+  }
+};
 </script>
