@@ -1,7 +1,7 @@
 <template>
   <div>
-    <b-button size="sm" variant="outline-secondary" class="mb-1" @click="download">Download</b-button>
-    <div ref="card" class="Card position-relative rounded bg-milk-light">
+    <b-badge variant="none" class="mb-1 text-secondary border border-secondary" href="#" @click="download">Download</b-badge>
+    <div ref="card" class="Card position-relative bg-milk-light">
       <div class="CardBody position-absolute w-100 h-100">
         <h3 class="text-center mb-0"><slot name="zh-title">???</slot></h3>
         <h6 class="text-center text-milk-dark text-uppercase"><slot name="en-title">???</slot></h6>
@@ -83,37 +83,37 @@ export default {
 
 .Card {
 
-  font-size: (11 / 12) * 1rem !important;
+  font-size: (11.5 / 12) * 1rem !important;
 
-  width:      (215 / 12) * 1rem;
-  min-width:  (215 / 12) * 1rem;
-  height:     (400 / 12) * 1rem;
-  min-height: (400 / 12) * 1rem;
+  width:      (424 / 24) * 1rem;
+  min-width:  (424 / 24) * 1rem;
+  height:     (817 / 24) * 1rem;
+  min-height: (817 / 24) * 1rem;
 
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .CardBody {
-  padding: 2.5rem 2rem 2rem;
+  padding: 2rem 1.5rem 1.5rem;
   top: 0;
 
   background: rgba(255, 255, 255, 0.2);
 }
 
 .CardFooter {
-  padding: 2rem;
+  padding: 1.5rem;
   bottom: 0;
 }
 
 .CardType {
-  top: 1.75rem;
-  left: 1.75rem;
+  top: 1.25rem;
+  left: 1.25rem;
 }
 
 .CardSeries {
-  top: 1.75rem;
-  right: 1.75rem;
+  top: 1.25rem;
+  right: 1.25rem;
   height: 1rem;
   width:  1rem;
 }
