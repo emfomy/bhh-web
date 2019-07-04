@@ -61,7 +61,7 @@
           今天應該沒有用來吊死誰⋯吧？
         </template>
         <p>你可以從直接爬上<Room name="Coal Chute" />，亦可從<Room name="Ballroom" />爬到<Room name="Gallery" />。</p>
-        <p>當你經過<Room name="Chasm" />時，無需進行檢定</p>
+        <p>當你經過<Room name="Chasm" />時，無需進行檢定。</p>
         <p>你不會因<Room name="Collapsed Room" />的效果受傷，並可從它下方的房間爬上來。</p>
         <p>當你使用升降機時，可以移動到任何的<Room name="Landing" />。</p>
       </OmenCard>

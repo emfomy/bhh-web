@@ -107,7 +107,7 @@
       <Roll0>請立即進行速度檢定：</Roll0>
       <RollL>
         <RollT>3+</RollT>
-          <RollD>你閃過了泥灰！獲得１級神志。</RollD>
+          <RollD>你閃過了泥灰！獲得１級速度。</RollD>
         <RollT>1-2</RollT>
           <RollD>你被瓦礫活埋！受到１顆骰的物理傷害。</RollD>
         <RollT>0</RollT>
@@ -365,7 +365,7 @@
       <template slot="story">
         房內的電話忽然想起，<br />你不自覺地接起這通電話⋯
       </template>
-      <Roll0>請立即擲２顆骰子，一名和藹的奶奶堆你說：</Roll0>
+      <Roll0>請立即擲２顆骰子，一名和藹的奶奶對你說：</Roll0>
       <RollL>
         <RollT>4</RollT>
           <RollD>『茶點和蛋糕！茶點和蛋糕！你永遠是我的小可愛！』<br />獲得１級神志。</RollD>

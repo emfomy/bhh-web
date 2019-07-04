@@ -68,8 +68,8 @@
           口吐白沫、胡言亂語的瘋漢。
         </template>
         <p>立即獲得２級力量，並失去１級神志。</p>
-        <p>若你失去<Omen brief name="Girl" />，立即失去２級力量，並獲得１級神志。</p>
-        <p><Omen brief name="Girl" />不可被棄置、交易、或搶奪。</p>
+        <p>若你失去<Omen brief name="Madman" />，立即失去２級力量，並獲得１級神志。</p>
+        <p><Omen brief name="Madman" />不可被棄置、交易、或搶奪。</p>
       </OmenCard>
 
       <OmenCard class="m-2" series="BHH" name="Mask">

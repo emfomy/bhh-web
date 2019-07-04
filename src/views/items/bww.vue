@@ -83,7 +83,7 @@
         破損的標籤上，<br />模糊地註記著提升活力的效用。<br />聞起來不像有毒的樣子。
       </template>
       <p>可自行使用，或用於治療同房的探險者。</p>
-      <p>被<Item brief name="Smelling Salts" />治療的探險者，將一項物理屬性和／或一項精神屬性恢復至初始值。</p>
+      <p>被<Item brief name="Snake Oil" />治療的探險者，將一項物理屬性和／或一項精神屬性恢復至初始值。</p>
       <p>使用後將<Item brief name="Snake Oil" />丟棄。</p>
     </ItemCard>
 
