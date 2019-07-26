@@ -53,7 +53,7 @@
         <RollT>2-3</RollT>
           <RollD>快走，快走！你必須趕快離開！移至<Room name="Entrance Hall"/>。</RollD>
         <RollT>0-1</RollT>
-          <RollD>你被烈焰所牽制，火花在你身上爆開。當你逃開時，受到１顆骰的物理傷害</RollD>
+          <RollD>你被烈焰所牽制，火花在你身上爆開。當你逃開時，受到１顆骰的物理傷害。</RollD>
       </RollL>
     </EventCard>
 
@@ -198,7 +198,7 @@
       <template slot="story">
         你轉身看見一名穿園丁服的男人，<br />他舉起鏟子，朝你衝來。<br />而就在鏟子快擊中你時，<br />卻消失了，只留下滿地的泥濘⋯
       </template>
-      <Roll0>請立即進行知識檢定：</Roll0>
+      <Roll0>請立即進行知識檢定（如果你位於<Room name="Gardens" />，少擲２顆）：</Roll0>
       <RollL>
         <RollT>4+</RollT>
           <RollD>你在泥濘中發現了某樣東西。抽取１張道具卡。</RollD>
@@ -341,7 +341,7 @@
         <RollT>5+</RollT>
           <RollD>你成功控制住滑道。移至低一樓層的任意一間房間中。</RollD>
         <RollT>0-4</RollT>
-          <RollD>你失控了！抽取一張地下的房間板塊<!-- （若已無未探索的地下房間，則任選一間） -->，跌落至該處，並受到１顆骰的物理傷害。若這是你不是的回合，則無須為新房間抽取事件／道具／預兆卡。</RollD>
+          <RollD>你失控了！抽取一張地下的房間板塊（若已無未探索的地下房間，則任選一間），跌落至該處，並受到１顆骰的物理傷害。若這是你不是的回合，則無須為新房間抽取事件／道具／預兆卡。</RollD>
       </RollL>
       <p>此後，任何探險者皆可透過檢定嘗試使用滑道，而不須花費行動步數。</p>
     </EventCard>
@@ -363,7 +363,7 @@
     <EventCard class="m-2" series="BHH" name="Phone Call">
       <template slot="zh-title">鈴鈴鈴⋯</template>
       <template slot="story">
-        房內的電話忽然想起，<br />你不自覺地接起這通電話⋯
+        房內的電話忽然響起，<br />你不自覺地接起這通電話⋯
       </template>
       <Roll0>請立即擲２顆骰子，一名和藹的奶奶對你說：</Roll0>
       <RollL>
@@ -501,7 +501,7 @@
         <RollT>5+</RollT>
           <RollD>抽取一張道具卡，並移除標記。</RollD>
         <RollT>0-4</RollT>
-          <RollD>你在附近挖掘，卻一無所獲。受到１顆骰的精神傷害</RollD>
+          <RollD>你在附近挖掘，卻一無所獲。受到１顆骰的精神傷害。</RollD>
       </RollL>
     </EventCard>
 
@@ -521,7 +521,7 @@
       <template slot="story">
         這房間似乎有些古怪，<br />但到底會是什麼呢？<br />這問題持續困擾著你⋯
       </template>
-      <Roll0>請立即進行神志檢定以找出原因：</Roll0>
+      <Roll0>請立即進行知識檢定以找出原因：</Roll0>
       <RollL>
         <RollT>4+</RollT>
           <RollD>牆上的一部分滑了開來，你發現了一個壁櫥。抽取１張道具卡。</RollD>
@@ -542,7 +542,7 @@
         <RollT>1-3</RollT>
           <RollD>失去１級力量。</RollD>
         <RollT>0</RollT>
-          <RollD>失去１級力量和１級神志。</RollD>
+          <RollD>失去１級力量和１級速度。</RollD>
       </RollL>
     </EventCard>
 
@@ -633,9 +633,9 @@
       <Roll0>請立即進行力量檢定：</Roll0>
       <RollL>
         <RollT>4+</RollT>
-          <RollD>你掙脫了，獲得１級力量</RollD>
+          <RollD>你掙脫了，獲得１級力量。</RollD>
         <RollT>0-3</RollT>
-          <RollD>你黏住了</RollD>
+          <RollD>你被黏住了。</RollD>
       </RollL>
 
       <p>若被黏住，保留此卡，並無法再進行任何行動或使用物品，直到掙脫為止。</p>

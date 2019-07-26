@@ -6,6 +6,12 @@
       <p></p>
     </header>
 
+    <b-card class="mb-3" header="附註" header-tag="h3" header-class="text-center mb-0">
+      <b-card-text>
+        卡片大小：高度 10.5cm，解析度 450 pixels/inch。
+      </b-card-text>
+    </b-card>
+
     <b-card class="mb-3" header="房間列表" header-tag="h3" header-class="text-center mb-0">
       <Room
         v-for="(item, key) in $share.rooms"

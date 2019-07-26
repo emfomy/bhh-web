@@ -192,7 +192,7 @@
       <template slot="story">
         幫助自己從未如此容易。
       </template>
-      <p>當你與其他探險者處於同一房間時，你可以使用<Item brief name="Pickpocket’s Glove" />，任意偷取該探險者所持有的其中一項物品。</p>
+      <p>當你與其他探險者處於同一房間時，可以使用<Item brief name="Pickpocket’s Glove" />，任意偷取該探險者所持有的其中一項物品。</p>
       <p>使用後將<Item brief name="Pickpocket’s Glove" />丟棄。</p>
     </ItemCard>
 
